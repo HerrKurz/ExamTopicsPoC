@@ -27,6 +27,7 @@ _Diagram created using [Excalidraw](https://excalidraw.com/)._
 5. The entire system is hosted on an EC2 t3.micro instance, deployed using Terraform.
 
 ## Project Structure
+```
 📦ExamTopicsPoC
  ┣ 📂documentation
  ┃ ┗ 📂images
@@ -48,6 +49,7 @@ _Diagram created using [Excalidraw](https://excalidraw.com/)._
  ┣ 📜logfile.log
  ┣ 📜main.py
  ┗ 📜requirements.txt
+ ```
 
 ## Project Overview
 
