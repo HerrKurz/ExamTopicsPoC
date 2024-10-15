@@ -1,0 +1,71 @@
+[
+    {
+        "filename": "result_Amazon AWS Certified Data Engineer - Associate question 2 discussion.html",
+        "question": "A retail company has a customer data hub in an Amazon S3 bucket. Employees from many countries use the data hub to support company-wide analytics. A governance team must ensure that the company's data analysts can access data only for customers who are within the same country as the analysts.Which solution will meet these requirements with the LEAST operational effort?",
+        "choices": [
+            "A.Create a separate table for each country's customer data. Provide access to each analyst based on the country that the analyst serves.",
+            "B.Register the S3 bucket as a data lake location in AWS Lake Formation. Use the Lake Formation row-level security features to enforce the company's access policies.",
+            "C.Move the data to AWS Regions that are close to the countries where the customers are. Provide access to each analyst based on the country that the analyst serves.",
+            "D.Load the data into Amazon Redshift. Create a view for each country. Create separate IAM roles for each country to provide access to data from each country. Assign the appropriate roles to the analysts."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 18,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Amazon AWS Certified Data Engineer - Associate question 3 discussion.html",
+        "question": "A media company wants to improve a system that recommends media content to customer based on user behavior and preferences. To improve the recommendation system, the company needs to incorporate insights from third-party datasets into the company's existing analytics platform.The company wants to minimize the effort and time required to incorporate third-party datasets.Which solution will meet these requirements with the LEAST operational overhead?",
+        "choices": [
+            "A.Use API calls to access and integrate third-party datasets from AWS Data Exchange.",
+            "B.Use API calls to access and integrate third-party datasets from AWS DataSync.",
+            "C.Use Amazon Kinesis Data Streams to access and integrate third-party datasets from AWS CodeCommit repositories.",
+            "D.Use Amazon Kinesis Data Streams to access and integrate third-party datasets from Amazon Elastic Container Registry (Amazon ECR)."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 19,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Amazon AWS Certified Data Engineer - Associate question 1 discussion.html",
+        "question": "A data engineer is configuring an AWS Glue job to read data from an Amazon S3 bucket. The data engineer has set up the necessary AWS Glue connection details and an associated IAM role. However, when the data engineer attempts to run the AWS Glue job, the data engineer receives an error message that indicates that there are problems with the Amazon S3 VPC gateway endpoint.The data engineer must resolve the error and connect the AWS Glue job to the S3 bucket.Which solution will meet this requirement?",
+        "choices": [
+            "A.Update the AWS Glue security group to allow inbound traffic from the Amazon S3 VPC gateway endpoint.",
+            "B.Configure an S3 bucket policy to explicitly grant the AWS Glue job permissions to access the S3 bucket.",
+            "C.Review the AWS Glue job code to ensure that the AWS Glue connection details include a fully qualified domain name.",
+            "D.Verify that the VPC's route table includes inbound and outbound routes for the Amazon S3 VPC gateway endpoint."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 14,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    }
+]
