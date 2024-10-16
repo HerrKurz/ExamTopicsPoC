@@ -3,7 +3,7 @@ import json
 
 
 def load_questions():
-    with open("./questions/aws.json", "r") as file:
+    with open("./questions/terraform_associate_new.json", "r") as file:
         data = json.load(file)
 
     questions = []
@@ -41,7 +41,7 @@ if "current_question" not in st.session_state:
 
 
 def run_quiz():
-    st.title("AWS Data Engineer Associate Quiz")
+    st.title("Terraform Associate Quiz")
 
     st.sidebar.header("Score Tracker")
     st.sidebar.write(

@@ -4,6 +4,8 @@ from googlesearch import search
 import time
 import random
 import logging
+from requests.exceptions import HTTPError
+import json
 
 logging.basicConfig(
     level=logging.INFO,
@@ -18,6 +20,7 @@ def save_webpage_content(url, file_path):
     }
     try:
         response = requests.get(url, headers=headers)
+        response.raise_for_status()
         with open(file_path, "wb") as file:
             file.write(response.content)
         logging.info(f"Saved webpage from {url} as {file_path}")
@@ -27,31 +30,70 @@ def save_webpage_content(url, file_path):
 
 def download_first_search_result(query, save_directory):
     logging.info(f"Searching for: {query}")
-    search_results = search(query, num_results=1)
-    first_result_url = next(iter(search_results), None)
+    try:
+        search_results = search(query, num_results=1)
+        first_result_url = next(iter(search_results), None)
 
-    if first_result_url:
-        file_name = f"result_{query}.html"
-        file_path = os.path.join(save_directory, file_name)
-        logging.info(f"Downloading from: {first_result_url}")
-        save_webpage_content(first_result_url, file_path)
-        logging.info(f"Saved as: {file_path}")
+        if first_result_url:
+            file_name = f"result_{query}.html"
+            file_path = os.path.join(save_directory, file_name)
+            logging.info(f"Downloading from: {first_result_url}")
+            save_webpage_content(first_result_url, file_path)
+            logging.info(f"Saved as: {file_path}")
+        else:
+            logging.warning(f"No search results found for query: {query}")
+    except HTTPError as e:
+        if e.response.status_code == 429:
+            logging.error("Rate limit exceeded. Sleeping for 1 hour.")
+            time.sleep(3600)
+            raise
+        else:
+            logging.error(f"HTTP error occurred: {e}")
+    except Exception as e:
+        logging.error(f"An error occurred during search: {e}")
 
-        logging.info("Sleeping")
-        time.sleep(random.uniform(20, 31))
-        logging.info("Woke up")
+    logging.info("Sleeping")
+    time.sleep(random.uniform(60, 120))
+    logging.info("Woke up")
+
+
+def save_progress(current_question):
+    with open("progress.json", "w") as f:
+        json.dump({"last_completed": current_question}, f)
+
+
+def load_progress():
+    try:
+        with open("progress.json", "r") as f:
+            return json.load(f)["last_completed"]
+    except FileNotFoundError:
+        return 0
 
 
 def main():
-    base_query = "Amazon AWS Certified Data Engineer - Associate question"
-    save_directory = "./html_pages/aws_test"
-    number_of_questions = 3
+    base_query = "HashiCorp Terraform Associate exam topics question"
+    save_directory = "./html_pages/terraform/terraform_associate"
+    number_of_questions = 346
 
     os.makedirs(save_directory, exist_ok=True)
 
-    for i in range(1, number_of_questions + 1):
+    # start_from = load_progress()
+    start_from = 80
+    logging.info(f"Resuming from question {start_from + 1}")
+
+    for i in range(start_from + 1, number_of_questions + 1):
         query = f"{base_query} {i} discussion"
-        download_first_search_result(query, save_directory)
+        try:
+            download_first_search_result(query, save_directory)
+            save_progress(i)
+        except HTTPError as e:
+            if e.response.status_code == 429:
+                logging.info(f"Rate limit hit. Stopping at question {i}.")
+                break
+            else:
+                logging.error(f"HTTP error for question {i}: {e}")
+        except Exception as e:
+            logging.error(f"Error processing question {i}: {e}")
 
 
 if __name__ == "__main__":

@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import os
 import json
 
-html_dir = "./html_pages/aws_test"
+html_dir = "./html_pages/terraform/terraform_associate"
 extracted_data = []
 
 for filename in os.listdir(html_dir):
@@ -48,6 +48,6 @@ for filename in os.listdir(html_dir):
 
     extracted_data.append(data)
 
-output_file = "./questions/aws_test.json"
+output_file = "./questions/terraform_associate_new.json"
 with open(output_file, "w") as json_file:
     json.dump(extracted_data, json_file, indent=4)
