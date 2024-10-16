@@ -4,6 +4,8 @@ questions/*
 !*aws_test*
 !*terraform_associate_new*
 
+progress.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

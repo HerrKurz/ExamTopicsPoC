@@ -94,8 +94,14 @@ This project consists of three main components:
      python -m venv venv
      ```
    - Activate the virtual environment:
-     - Windows: `venv\Scripts\activate`
-     - macOS/Linux: `source venv/bin/activate`
+     - Windows:
+     ```
+     venv\Scripts\activate
+     ```
+     - macOS/Linux: 
+     ```
+     source venv/bin/activate
+     ```
 
 3. **Install Dependencies**:
    ```
@@ -107,13 +113,13 @@ This project consists of three main components:
 
 5. **Run Web Scraper**:
    ```
-   python src/ingestion.py
+   python3 src/ingestion.py
    ```
    This will download HTML files to the `html_pages` directory
 
 6. **Run Data Parser**:
    ```
-   python src/parser.py
+   python3 src/parser.py
    ```
    This will generate a JSON file with structured question data
 
@@ -122,3 +128,5 @@ This project consists of three main components:
    streamlit run src/streamlit_app.py
    ```
    Access the quiz through the provided local URL
+
+   OR go to the deployed version: [Streamlit App](https://herrkurz-examtopicspoc-srcstreamlit-app-ybocic.streamlit.app/)
