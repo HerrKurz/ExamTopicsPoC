@@ -3,6 +3,13 @@ import json
 import os
 
 
+def format_exam_name(filename):
+    # Remove .json extension if present
+    name = filename[:-5] if filename.endswith(".json") else filename
+    # Replace underscores with spaces and capitalize each word
+    return " ".join(word.capitalize() for word in name.split("_"))
+
+
 def load_vendors():
     return [
         d
@@ -16,7 +23,9 @@ def load_exams(vendor):
     vendor_dir = os.path.join("./questions", vendor)
     for filename in os.listdir(vendor_dir):
         if filename.endswith(".json"):
-            exams.append(filename[:-5])  # Remove .json extension
+            exam_name = filename[:-5]  # Remove .json extension
+            formatted_name = format_exam_name(exam_name)
+            exams.append({"file": exam_name, "display": formatted_name})
     return exams
 
 
@@ -96,18 +105,28 @@ def run_quiz():
             st.session_state.selected_exam = None
 
         if st.session_state.selected_vendor:
-            selected_exam = st.selectbox("Choose an exam", st.session_state.exams)
+            exam_options = {
+                exam["display"]: exam["file"] for exam in st.session_state.exams
+            }
+            selected_exam_display = st.selectbox(
+                "Choose an exam", list(exam_options.keys())
+            )
+            selected_exam_file = exam_options[selected_exam_display]
 
             if st.button("Start Quiz"):
-                st.session_state.selected_exam = selected_exam
+                st.session_state.selected_exam = selected_exam_file
                 st.session_state.questions = load_questions(
-                    st.session_state.selected_vendor, selected_exam
+                    st.session_state.selected_vendor, selected_exam_file
                 )
                 st.session_state.total_questions = len(st.session_state.questions)
                 st.session_state.quiz_started = True
                 st.rerun()
 
     if st.session_state.quiz_started:
+        # Dynamic quiz title
+        quiz_title = f"{st.session_state.selected_vendor} - {format_exam_name(st.session_state.selected_exam)} Quiz"
+        st.title(quiz_title)
+
         st.sidebar.header("Score Tracker")
         percentage = calculate_percentage(
             st.session_state.score, st.session_state.attempts
