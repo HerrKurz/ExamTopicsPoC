@@ -76,6 +76,10 @@ def initialize_session_state():
         st.session_state.quiz_started = False
 
 
+def calculate_percentage(score, total):
+    return (score / total) * 100 if total > 0 else 0
+
+
 def run_quiz():
     st.title("Exam Quiz App")
 
@@ -84,7 +88,6 @@ def run_quiz():
     if not st.session_state.quiz_started:
         st.write("Select a vendor and exam to start the quiz:")
 
-        # Vendor selection
         selected_vendor = st.selectbox("Choose a vendor", st.session_state.vendors)
 
         if selected_vendor != st.session_state.selected_vendor:
@@ -92,7 +95,6 @@ def run_quiz():
             st.session_state.exams = load_exams(selected_vendor)
             st.session_state.selected_exam = None
 
-        # Exam selection
         if st.session_state.selected_vendor:
             selected_exam = st.selectbox("Choose an exam", st.session_state.exams)
 
@@ -107,13 +109,21 @@ def run_quiz():
 
     if st.session_state.quiz_started:
         st.sidebar.header("Score Tracker")
+        percentage = calculate_percentage(
+            st.session_state.score, st.session_state.attempts
+        )
         st.sidebar.write(
             f"Current Score: {st.session_state.score}/{st.session_state.attempts}"
         )
+        st.sidebar.write(f"Percentage: {percentage:.2f}%")
         if st.session_state.attempts > 0:
             st.sidebar.progress(st.session_state.score / st.session_state.attempts)
         else:
             st.sidebar.progress(0)
+
+        if st.sidebar.button("End Quiz Early"):
+            st.session_state.current_question = st.session_state.total_questions
+            st.rerun()
 
         if st.session_state.current_question < st.session_state.total_questions:
             question = st.session_state.questions[st.session_state.current_question]
@@ -162,9 +172,13 @@ def run_quiz():
 
         else:
             st.write("Quiz completed!")
-            st.write(
-                f"Your final score: {st.session_state.score} out of {st.session_state.total_questions}"
+            final_percentage = calculate_percentage(
+                st.session_state.score, st.session_state.attempts
             )
+            st.write(
+                f"Your final score: {st.session_state.score} out of {st.session_state.attempts}"
+            )
+            st.write(f"Final Percentage: {final_percentage:.2f}%")
 
             col1, col2 = st.columns(2)
             with col1:
