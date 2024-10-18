@@ -53,7 +53,7 @@ def download_first_search_result(query, save_directory):
         logging.error(f"An error occurred during search: {e}")
 
     logging.info("Sleeping")
-    time.sleep(random.uniform(60, 120))
+    time.sleep(random.uniform(41, 50))
     logging.info("Woke up")
 
 
@@ -71,14 +71,14 @@ def load_progress():
 
 
 def main():
-    base_query = "HashiCorp Terraform Associate exam topics question"
-    save_directory = "./html_pages/terraform/terraform_associate"
-    number_of_questions = 346
+    base_query = "AWS Certified Data Engineer - Associate exam topics question"
+    save_directory = "./html_pages/AWS/data_engineer_associate"
+    number_of_questions = 152
 
     os.makedirs(save_directory, exist_ok=True)
 
     # start_from = load_progress()
-    start_from = 80
+    start_from = 85
     logging.info(f"Resuming from question {start_from + 1}")
 
     for i in range(start_from + 1, number_of_questions + 1):

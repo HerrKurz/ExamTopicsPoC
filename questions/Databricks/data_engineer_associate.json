@@ -1,0 +1,2615 @@
+[
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 125 discussion.html",
+        "question": "The data science team has created and logged a production model using MLflow. The model accepts a list of column names and returns a new column of type DOUBLE.The following code correctly imports the production model, loads the customers table containing the customer_id key column into a DataFrame, and defines the feature columns needed for the model.Which code block will output a DataFrame with the schema \"customer_id LONG, predictions DOUBLE\"?",
+        "choices": [
+            "A.df.map(lambda x:model(x[columns])).select(\"customer_id, predictions\")",
+            "B.df.select(\"customer_id\",model(*columns).alias(\"predictions\"))",
+            "C.model.predict(df, columns)",
+            "D.df.apply(model, columns).select(\"customer_id, predictions\")"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 92 discussion.html",
+        "question": "In order to prevent accidental commits to production data, a senior data engineer has instituted a policy that all development work will reference clones of Delta Lake tables. After testing both DEEP and SHALLOW CLONE, development tables are created using SHALLOW CLONE.A few weeks after initial table creation, the cloned versions of several tables implemented as Type 1 Slowly Changing Dimension (SCD) stop working. The transaction logs for the source tables show that VACUUM was run the day before.Which statement describes why the cloned tables are no longer working?",
+        "choices": [
+            "A.Because Type 1 changes overwrite existing records, Delta Lake cannot guarantee data consistency for cloned tables.",
+            "B.Running VACUUM automatically invalidates any shallow clones of a table; DEEP CLONE should always be used when a cloned table will be repeatedly queried.",
+            "C.Tables created with SHALLOW CLONE are automatically deleted after their default retention threshold of 7 days.",
+            "D.The metadata created by the CLONE operation is referencing data files that were purged as invalid by the VACUUM command.",
+            "E.The data files compacted by VACUUM are not tracked by the cloned metadata; running REFRESH on the cloned table will pull in recent changes."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 6 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 127 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 15 discussion.html",
+        "question": "Which of the following benefits is provided by the array functions from Spark SQL?",
+        "choices": [
+            "A.An ability to work with data in a variety of types at once",
+            "B.An ability to work with data within certain partitions and windows",
+            "C.An ability to work with time-related data in specified intervals",
+            "D.An ability to work with complex, nested data ingested from JSON files",
+            "E.An ability to work with an array of tables for procedural automation"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 18,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 71 discussion.html",
+        "question": "A data engineer has developed a data pipeline to ingest data from a JSON source using Auto Loader, but the engineer has not provided any type inference or schema hints in their pipeline. Upon reviewing the data, the data engineer has noticed that all of the columns in the target table are of the string type despite some of the fields only including float or boolean values.Which of the following describes why Auto Loader inferred all of the columns to be of the string type?",
+        "choices": [
+            "A.There was a type mismatch between the specific schema and the inferred schema",
+            "B.JSON data is a text-based format",
+            "C.Auto Loader only works with string data",
+            "D.All of the fields had at least one null value",
+            "E.Auto Loader cannot infer the schema of ingested data"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 18 discussion.html",
+        "question": "A data analyst has a series of queries in a SQL program. The data analyst wants this program to run every day. They only want the final query in the program to run on Sundays. They ask for help from the data engineering team to complete this task.Which of the following approaches could be used by the data engineering team to complete this task?",
+        "choices": [
+            "A.They could submit a feature request with Databricks to add this functionality.",
+            "B.They could wrap the queries using PySpark and use Python\u2019s control flow system to determine when to run the final query.",
+            "C.They could only run the entire program on Sundays.",
+            "D.They could automatically restrict access to the source table in the final query so that it is only accessible on Sundays.",
+            "E.They could redesign the data model to separate the data used in the final query into a new table."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 109 discussion.html",
+        "question": "A Delta Lake table representing metadata about content posts from users has the following schema:user_id LONG, post_text STRING, post_id STRING, longitude FLOAT, latitude FLOAT, post_time TIMESTAMP, date DATEBased on the above schema, which column is a good candidate for partitioning the Delta Table?",
+        "choices": [
+            "A.post_time",
+            "B.latitude",
+            "C.post_id",
+            "D.user_id",
+            "E.date"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 57 discussion.html",
+        "question": "Which of the following SQL keywords can be used to convert a table from a long format to a wide format?",
+        "choices": [
+            "A.TRANSFORM",
+            "B.PIVOT",
+            "C.SUM",
+            "D.CONVERT",
+            "E.WHERE"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 99 discussion.html",
+        "question": "The data governance team is reviewing code used for deleting records for compliance with GDPR. The following logic has been implemented to propagate delete requests from the user_lookup table to the user_aggregates table.Assuming that user_id is a unique identifying key and that all users that have requested deletion have been removed from the user_lookup table, which statement describes whether successfully executing the above logic guarantees that the records to be deleted from the user_aggregates table are no longer accessible and why?",
+        "choices": [
+            "A.No; the Delta Lake DELETE command only provides ACID guarantees when combined with the MERGE INTO command.",
+            "B.No; files containing deleted records may still be accessible with time travel until a VACUUM command is used to remove invalidated data files.",
+            "C.Yes; the change data feed uses foreign keys to ensure delete consistency throughout the Lakehouse.",
+            "D.Yes; Delta Lake ACID guarantees provide assurance that the DELETE command succeeded fully and permanently purged these records.",
+            "E.No; the change data feed only tracks inserts and updates, not deleted records."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 38 discussion.html",
+        "question": "An engineering manager wants to monitor the performance of a recent project using a Databricks SQL query. For the first week following the project\u2019s release, the manager wants the query results to be updated every minute. However, the manager is concerned that the compute resources used for the query will be left running and cost the organization a lot of money beyond the first week of the project\u2019s release.Which of the following approaches can the engineering team use to ensure the query does not cost the organization any money beyond the first week of the project\u2019s release?",
+        "choices": [
+            "A.They can set a limit to the number of DBUs that are consumed by the SQL Endpoint.",
+            "B.They can set the query\u2019s refresh schedule to end after a certain number of refreshes.",
+            "C.They cannot ensure the query does not cost the organization money beyond the first week of the project\u2019s release.",
+            "D.They can set a limit to the number of individuals that are able to manage the query\u2019s refresh schedule.",
+            "E.They can set the query\u2019s refresh schedule to end on a certain date in the query scheduler."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 25,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 9,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 5 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 69 discussion.html",
+        "question": "A data engineer needs to create a table in Databricks using data from a CSV file at location /path/to/csv.They run the following command:Which of the following lines of code fills in the above blank to successfully complete the task?",
+        "choices": [
+            "A.None of these lines of code are needed to successfully complete the task",
+            "B.USING CSV",
+            "C.FROM CSV",
+            "D.USING DELTA",
+            "E.FROM \"path/to/csv\""
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 86 discussion.html",
+        "question": "In which of the following scenarios should a data engineer select a Task in the Depends On field of a new Databricks Job Task?",
+        "choices": [
+            "A.When another task needs to be replaced by the new task",
+            "B.When another task needs to fail before the new task begins",
+            "C.When another task has the same dependency libraries as the new task",
+            "D.When another task needs to use as little compute resources as possible",
+            "E.When another task needs to successfully complete before the new task begins"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 90 discussion.html",
+        "question": "A new data engineering team team has been assigned to an ELT project. The new data engineering team will need full privileges on the table sales to fully manage the project.Which of the following commands can be used to grant full permissions on the database to the new data engineering team?",
+        "choices": [
+            "A.GRANT ALL PRIVILEGES ON TABLE sales TO team;",
+            "B.GRANT SELECT CREATE MODIFY ON TABLE sales TO team;",
+            "C.GRANT SELECT ON TABLE sales TO team;",
+            "D.GRANT USAGE ON TABLE sales TO team;",
+            "E.GRANT ALL PRIVILEGES ON TABLE team TO sales;"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 132 discussion.html",
+        "question": "An hourly batch job is configured to ingest data files from a cloud object storage container where each batch represent all records produced by the source system in a given hour. The batch job to process these records into the Lakehouse is sufficiently delayed to ensure no late-arriving data is missed. The user_id field represents a unique key for the data, which has the following schema:user_id BIGINT, username STRING, user_utc STRING, user_region STRING, last_login BIGINT, auto_pay BOOLEAN, last_updated BIGINTNew records are all ingested into a table named account_history which maintains a full record of all data in the same schema as the source. The next table in the system is named account_current and is implemented as a Type 1 table representing the most recent value for each unique user_id.Which implementation can be used to efficiently update the described account_current table as part of each hourly batch job assuming there are millions of user accounts and tens of thousands of records processed hourly?",
+        "choices": [
+            "A.Filter records in account_history using the last_updated field and the most recent hour processed, making sure to deduplicate on username; write a merge statement to update or insert the most recent value for each username.",
+            "B.Use Auto Loader to subscribe to new files in the account_history directory; configure a Structured Streaming trigger available job to batch update newly detected files into the account_current table.",
+            "C.Overwrite the account_current table with each batch using the results of a query against the account_history table grouping by user_id and filtering for the max value of last_updated.",
+            "D.Filter records in account_history using the last_updated field and the most recent hour processed, as well as the max last_login by user_id write a merge statement to update or insert the most recent value for each user_id."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 46 discussion.html",
+        "question": "Although the Databricks Utilities Secrets module provides tools to store sensitive credentials and avoid accidentally displaying them in plain text users should still be careful with which credentials are stored here and which users have access to using these secrets.Which statement describes a limitation of Databricks Secrets?",
+        "choices": [
+            "A.Because the SHA256 hash is used to obfuscate stored secrets, reversing this hash will display the value in plain text.",
+            "B.Account administrators can see all secrets in plain text by logging on to the Databricks Accounts console.",
+            "C.Secrets are stored in an administrators-only table within the Hive Metastore; database administrators have permission to query this table by default.",
+            "D.Iterating through a stored secret and printing each character will display secret contents in plain text.",
+            "E.The Databricks REST API can be used to list secrets in plain text if the personal access token has proper credentials."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 11,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 6,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 10 discussion.html",
+        "question": "A data engineer needs to determine whether to use the built-in Databricks Notebooks versioning or version their project using Databricks Repos.Which of the following is an advantage of using Databricks Repos over the Databricks Notebooks versioning?",
+        "choices": [
+            "A.Databricks Repos automatically saves development progress",
+            "B.Databricks Repos supports the use of multiple branches",
+            "C.Databricks Repos allows users to revert to previous versions of a notebook",
+            "D.Databricks Repos provides the ability to comment on specific changes",
+            "E.Databricks Repos is wholly housed within the Databricks Lakehouse Platform"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 20,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 65 discussion.html",
+        "question": "A data engineer is attempting to drop a Spark SQL table my_table and runs the following command:DROP TABLE IF EXISTS my_table;After running this command, the engineer notices that the data files and metadata files have been deleted from the file system.Which of the following describes why all of these files were deleted?",
+        "choices": [
+            "A.The table was managed",
+            "B.The table's data was smaller than 10 GB",
+            "C.The table's data was larger than 10 GB",
+            "D.The table was external",
+            "E.The table did not have a location"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 53 discussion.html",
+        "question": "Which of the following is stored in the Databricks customer's cloud account?",
+        "choices": [
+            "A.Databricks web application",
+            "B.Cluster management metadata",
+            "C.Repos",
+            "D.Data",
+            "E.Notebooks"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 115 discussion.html",
+        "question": "You use a dataset in BigQuery for analysis. You want to provide third-party companies with access to the same dataset. You need to keep the costs of data sharing low and ensure that the data is current. Which solution should you choose?",
+        "choices": [
+            "A.Use Analytics Hub to control data access, and provide third party companies with access to the dataset.",
+            "B.Use Cloud Scheduler to export the data on a regular basis to Cloud Storage, and provide third-party companies with access to the bucket.",
+            "C.Create a separate dataset in BigQuery that contains the relevant data to share, and provide third-party companies with access to the new dataset.",
+            "D.Create a Dataflow job that reads the data in frequent time intervals, and writes it to the relevant BigQuery dataset or Cloud Storage bucket for third-party companies to use."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 15,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 88 discussion.html",
+        "question": "A data engineer wants to schedule their Databricks SQL dashboard to refresh every hour, but they only want the associated SQL endpoint to be running when it is necessary. The dashboard has multiple queries on multiple datasets associated with it. The data that feeds the dashboard is automatically processed using a Databricks Job.Which of the following approaches can the data engineer use to minimize the total running time of the SQL endpoint used in the refresh schedule of their dashboard?",
+        "choices": [
+            "A.They can turn on the Auto Stop feature for the SQL endpoint.",
+            "B.They can ensure the dashboard's SQL endpoint is not one of the included query's SQL endpoint.",
+            "C.They can reduce the cluster size of the SQL endpoint.",
+            "D.They can ensure the dashboard's SQL endpoint matches each of the queries' SQL endpoints.",
+            "E.They can set up the dashboard's SQL endpoint to be serverless."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 131 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 64 discussion.html",
+        "question": "A data engineer has created a new database using the following command:CREATE DATABASE IF NOT EXISTS customer360;In which of the following locations will the customer360 database be located?",
+        "choices": [
+            "A.dbfs:/user/hive/database/customer360",
+            "B.dbfs:/user/hive/warehouse",
+            "C.dbfs:/user/hive/customer360",
+            "D.More information is needed to determine the correct response",
+            "E.dbfs:/user/hive/database"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 10,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 32 discussion.html",
+        "question": "A dataset has been defined using Delta Live Tables and includes an expectations clause:CONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROWWhat is the expected behavior when a batch of data containing data that violates these constraints is processed?",
+        "choices": [
+            "A.Records that violate the expectation are dropped from the target dataset and loaded into a quarantine table.",
+            "B.Records that violate the expectation are added to the target dataset and flagged as invalid in a field added to the target dataset.",
+            "C.Records that violate the expectation are dropped from the target dataset and recorded as invalid in the event log.",
+            "D.Records that violate the expectation are added to the target dataset and recorded as invalid in the event log.",
+            "E.Records that violate the expectation cause the job to fail."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 33,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 133 discussion.html",
+        "question": "The business intelligence team has a dashboard configured to track various summary metrics for retail stores. This includes total sales for the previous day alongside totals and averages for a variety of time periods. The fields required to populate this dashboard have the following schema:For demand forecasting, the Lakehouse contains a validated table of all itemized sales updated incrementally in near real-time. This table, named products_per_order, includes the following fields:Because reporting on long-term sales trends is less volatile, analysts using the new dashboard only require data to be refreshed once daily. Because the dashboard will be queried interactively by many users throughout a normal business day, it should return results quickly and reduce total compute associated with each materialization.Which solution meets the expectations of the end users while controlling and limiting possible costs?",
+        "choices": [
+            "A.Populate the dashboard by configuring a nightly batch job to save the required values as a table overwritten with each update.",
+            "B.Use Structured Streaming to configure a live dashboard against the products_per_order table within a Databricks notebook.",
+            "C.Define a view against the products_per_order table and define the dashboard against this view.",
+            "D.Use the Delta Cache to persist the products_per_order table in memory to quickly update the dashboard with each query."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 3 discussion.html",
+        "question": "Which of the following is hosted completely in the control plane of the classic Databricks architecture?",
+        "choices": [
+            "A.Worker node",
+            "B.JDBC data source",
+            "C.Databricks web application",
+            "D.Databricks Filesystem",
+            "E.Driver node"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 31,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 112 discussion.html",
+        "question": "A data engineer is working with two tables. Each of these tables is displayed below in its entirety.The data engineer runs the following query to join these tables together:",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D."
+        ],
+        "correct_answer": "C",
+        "user_data": []
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 68 discussion.html",
+        "question": "A data engineer is working with two tables. Each of these tables is displayed below in its entirety.The data engineer runs the following query to join these tables together:Which of the following will be returned by the above query?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 13,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 135 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 79 discussion.html",
+        "question": "Which of the following queries is performing a streaming hop from raw data to a Bronze table?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 60 discussion.html",
+        "question": "A data analyst has developed a query that runs against Delta table. They want help from the data engineering team to implement a series of tests to ensure the data returned by the query is clean. However, the data engineering team uses Python for its tests rather than SQL.Which of the following operations could the data engineering team use to run the query and operate with the results in PySpark?",
+        "choices": [
+            "A.SELECT * FROM sales",
+            "B.spark.delta.table",
+            "C.spark.sql",
+            "D.There is no way to share data between PySpark and SQL.",
+            "E.spark.table"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 6,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 49 discussion.html",
+        "question": "Which of the following describes a scenario in which a data engineer will want to use a single-node cluster?",
+        "choices": [
+            "A.When they are working interactively with a small amount of data",
+            "B.When they are running automated reports to be refreshed as quickly as possible",
+            "C.When they are working with SQL within Databricks SQL",
+            "D.When they are concerned about the ability to automatically scale with larger data",
+            "E.When they are manually running reports with a large amount of data"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 89 discussion.html",
+        "question": "A data engineer needs access to a table new_table, but they do not have the correct permissions. They can ask the table owner for permission, but they do not know who the table owner is.Which of the following approaches can be used to identify the owner of new_table?",
+        "choices": [
+            "A.Review the Permissions tab in the table's page in Data Explorer",
+            "B.All of these options can be used to identify the owner of the table",
+            "C.Review the Owner field in the table's page in Data Explorer",
+            "D.Review the Owner field in the table's page in the cloud storage solution",
+            "E.There is no way to identify the owner of the table"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 25 discussion.html",
+        "question": "A data engineer is maintaining a data pipeline. Upon data ingestion, the data engineer notices that the source data is starting to have a lower level of quality. The data engineer would like to automate the process of monitoring the quality level.Which of the following tools can the data engineer use to solve this problem?",
+        "choices": [
+            "A.Unity Catalog",
+            "B.Data Explorer",
+            "C.Delta Lake",
+            "D.Delta Live Tables",
+            "E.Auto Loader"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 25,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 82 discussion.html",
+        "question": "A data engineering team has noticed that their Databricks SQL queries are running too slowly when they are submitted to a non-running SQL endpoint. The data engineering team wants this issue to be resolved.Which of the following approaches can the team use to reduce the time it takes to return results in this scenario?",
+        "choices": [
+            "A.They can turn on the Serverless feature for the SQL endpoint and change the Spot Instance Policy to \"Reliability Optimized.\"",
+            "B.They can turn on the Auto Stop feature for the SQL endpoint.",
+            "C.They can increase the cluster size of the SQL endpoint.",
+            "D.They can turn on the Serverless feature for the SQL endpoint.",
+            "E.They can increase the maximum bound of the SQL endpoint's scaling range."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 13,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 97 discussion.html",
+        "question": "A data engineer is running code in a Databricks Repo that is cloned from a central Git repository. A colleague of the data engineer informs them that changes have been made and synced to the central Git repository. The data engineer now needs to sync their Databricks Repo to get the changes from the central Git repository.Which Git operation does the data engineer need to run to accomplish this task?",
+        "choices": [
+            "A.Clone",
+            "B.Pull",
+            "C.Merge",
+            "D.Push"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 35 discussion.html",
+        "question": "To reduce storage and compute costs, the data engineering team has been tasked with curating a series of aggregate tables leveraged by business intelligence dashboards, customer-facing applications, production machine learning models, and ad hoc analytical queries.The data engineering team has been made aware of new requirements from a customer-facing application, which is the only downstream workload they manage entirely. As a result, an aggregate table used by numerous teams across the organization will need to have a number of fields renamed, and additional fields will also be added.Which of the solutions addresses the situation while minimally interrupting other teams in the organization without increasing the number of tables that need to be managed?",
+        "choices": [
+            "A.Send all users notice that the schema for the table will be changing; include in the communication the logic necessary to revert the new table schema to match historic queries.",
+            "B.Configure a new table with all the requisite fields and new names and use this as the source for the customer-facing application; create a view that maintains the original data schema and table name by aliasing select fields from the new table.",
+            "C.Create a new table with the required schema and new fields and use Delta Lake's deep clone functionality to sync up changes committed to one table to the corresponding table.",
+            "D.Replace the current table definition with a logical view defined with the query logic currently writing the aggregate table; create a new table to power the customer-facing application.",
+            "E.Add a table comment warning all users that the table schema and field names will be changing on a given date; overwrite the table in place to the specifications of the customer-facing application."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 16 discussion.html",
+        "question": "Which of the following commands can be used to write data into a Delta table while avoiding the writing of duplicate records?",
+        "choices": [
+            "A.DROP",
+            "B.IGNORE",
+            "C.MERGE",
+            "D.APPEND",
+            "E.INSERT"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 13,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 36 discussion.html",
+        "question": "A data engineer has three tables in a Delta Live Tables (DLT) pipeline. They have configured the pipeline to drop invalid records at each table. They notice that some data is being dropped due to quality concerns at some point in the DLT pipeline. They would like to determine at which table in their pipeline the data is being dropped.Which of the following approaches can the data engineer take to identify the table that is dropping the records?",
+        "choices": [
+            "A.They can set up separate expectations for each table when developing their DLT pipeline.",
+            "B.They cannot determine which table is dropping the records.",
+            "C.They can set up DLT to notify them via email when records are dropped.",
+            "D.They can navigate to the DLT pipeline page, click on each table, and view the data quality statistics.",
+            "E.They can navigate to the DLT pipeline page, click on the \u201cError\u201d button, and review the present errors."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 22,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 22 discussion.html",
+        "question": "A data engineer only wants to execute the final block of a Python program if the Python variable day_of_week is equal to 1 and the Python variable review_period is True.Which of the following control flow statements should the data engineer use to begin this conditionally executed code block?",
+        "choices": [
+            "A.if day_of_week = 1 and review_period:",
+            "B.if day_of_week = 1 and review_period = \"True\":",
+            "C.if day_of_week == 1 and review_period == \"True\":",
+            "D.if day_of_week == 1 and review_period:",
+            "E.if day_of_week = 1 & review_period: = \"True\":"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 13,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 76 discussion.html",
+        "question": "Which of the following describes the type of workloads that are always compatible with Auto Loader?",
+        "choices": [
+            "A.Streaming workloads",
+            "B.Machine learning workloads",
+            "C.Serverless workloads",
+            "D.Batch workloads",
+            "E.Dashboard workloads"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 29 discussion.html",
+        "question": "Which of the following describes the relationship between Bronze tables and raw data?",
+        "choices": [
+            "A.Bronze tables contain less data than raw data files.",
+            "B.Bronze tables contain more truthful data than raw data.",
+            "C.Bronze tables contain aggregates while raw data is unaggregated.",
+            "D.Bronze tables contain a less refined view of data than raw data.",
+            "E.Bronze tables contain raw data with a schema applied."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 24,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 42 discussion.html",
+        "question": "A single Job runs two notebooks as two separate tasks. A data engineer has noticed that one of the notebooks is running slowly in the Job\u2019s current run. The data engineer asks a tech lead for help in identifying why this might be the case.Which of the following approaches can the tech lead use to identify why the notebook is running slowly as part of the Job?",
+        "choices": [
+            "A.They can navigate to the Runs tab in the Jobs UI to immediately review the processing notebook.",
+            "B.They can navigate to the Tasks tab in the Jobs UI and click on the active run to review the processing notebook.",
+            "C.They can navigate to the Runs tab in the Jobs UI and click on the active run to review the processing notebook.",
+            "D.There is no way to determine why a Job task is running slowly.",
+            "E.They can navigate to the Tasks tab in the Jobs UI to immediately review the processing notebook."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 11,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 66 discussion.html",
+        "question": "A data engineer that is new to using Python needs to create a Python function to add two integers together and return the sum?Which of the following code blocks can the data engineer use to complete this task?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 8 discussion.html",
+        "question": "Which of the following Git operations must be performed outside of Databricks Repos?",
+        "choices": [
+            "A.Commit",
+            "B.Pull",
+            "C.Push",
+            "D.Clone",
+            "E.Merge"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 17,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 93 discussion.html",
+        "question": "A data engineer is maintaining a data pipeline. Upon data ingestion, the data engineer notices that the source data is starting to have a lower level of quality. The data engineer would like to automate the process of monitoring the quality level.Which of the following tools can the data engineer use to solve this problem?",
+        "choices": [
+            "A.Unity Catalog",
+            "B.Data Explorer",
+            "C.Delta Lake",
+            "D.Delta Live Tables",
+            "E.Auto Loader"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 25,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 113 discussion.html",
+        "question": "You are a retailer that wants to integrate your online sales capabilities with different in-home assistants, such as Google Home. You need to interpret customer voice commands and issue an order to the backend systems. Which solutions should you choose?",
+        "choices": [
+            "A.Speech-to-Text API",
+            "B.Cloud Natural Language API",
+            "C.Dialogflow Enterprise Edition",
+            "D.AutoML Natural Language"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 17,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 48 discussion.html",
+        "question": "A data engineer needs to use a Delta table as part of a data pipeline, but they do not know if they have the appropriate permissions.In which of the following locations can the data engineer review their permissions on the table?",
+        "choices": [
+            "A.Databricks Filesystem",
+            "B.Jobs",
+            "C.Dashboards",
+            "D.Repos",
+            "E.Data Explorer"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 11 discussion.html",
+        "question": "A data engineer has left the organization. The data team needs to transfer ownership of the data engineer\u2019s Delta tables to a new data engineer. The new data engineer is the lead engineer on the data team.Assuming the original data engineer no longer has access, which of the following individuals must be the one to transfer ownership of the Delta tables in Data Explorer?",
+        "choices": [
+            "A.Databricks account representative",
+            "B.This transfer is not possible",
+            "C.Workspace administrator",
+            "D.New lead data engineer",
+            "E.Original data engineer"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 18,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 50 discussion.html",
+        "question": "A data engineer has been given a new record of data:id STRING = 'a1'rank INTEGER = 6rating FLOAT = 9.4Which of the following SQL commands can be used to append the new record to an existing Delta table my_table?",
+        "choices": [
+            "A.INSERT INTO my_table VALUES ('a1', 6, 9.4)",
+            "B.my_table UNION VALUES ('a1', 6, 9.4)",
+            "C.INSERT VALUES ( 'a1' , 6, 9.4) INTO my_table",
+            "D.UPDATE my_table VALUES ('a1', 6, 9.4)",
+            "E.UPDATE VALUES ('a1', 6, 9.4) my_table"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 2 discussion.html",
+        "question": "Which of the following describes a scenario in which a data team will want to utilize cluster pools?",
+        "choices": [
+            "A.An automated report needs to be refreshed as quickly as possible.",
+            "B.An automated report needs to be made reproducible.",
+            "C.An automated report needs to be tested to identify errors.",
+            "D.An automated report needs to be version-controlled across multiple collaborators.",
+            "E.An automated report needs to be runnable by all stakeholders."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 36,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 106 discussion.html",
+        "question": "A nightly batch job is configured to ingest all data files from a cloud object storage container where records are stored in a nested directory structure YYYY/MM/DD. The data for each date represents all records that were processed by the source system on that date, noting that some records may be delayed as they await moderator approval. Each entry represents a user review of a product and has the following schema:user_id STRING, review_id BIGINT, product_id BIGINT, review_timestamp TIMESTAMP, review_text STRINGThe ingestion job is configured to append all data for the previous date to a target table reviews_raw with an identical schema to the source system. The next step in the pipeline is a batch write to propagate all new records inserted into reviews_raw to a table where data is fully deduplicated, validated, and enriched.Which solution minimizes the compute costs to propagate this batch of data?",
+        "choices": [
+            "A.Perform a batch read on the reviews_raw table and perform an insert-only merge using the natural composite key user_id, review_id, product_id, review_timestamp.",
+            "B.Configure a Structured Streaming read against the reviews_raw table using the trigger once execution mode to process new records as a batch job.",
+            "C.Use Delta Lake version history to get the difference between the latest version of reviews_raw and one version prior, then write these records to the next table.",
+            "D.Filter all records in the reviews_raw table based on the review_timestamp; batch append those records produced in the last 48 hours.",
+            "E.Reprocess all records in reviews_raw and overwrite the next table in the pipeline."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 24 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 51 discussion.html",
+        "question": "Where in the Spark UI can one diagnose a performance problem induced by not leveraging predicate push-down?",
+        "choices": [
+            "A.In the Executor\u2019s log file, by grepping for \"predicate push-down\"",
+            "B.In the Stage\u2019s Detail screen, in the Completed Stages table, by noting the size of data read from the Input column",
+            "C.In the Storage Detail screen, by noting which RDDs are not stored on disk",
+            "D.In the Delta Lake transaction log. by noting the column statistics",
+            "E.In the Query Detail screen, by interpreting the Physical Plan"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 30 discussion.html",
+        "question": "Which of the following tools is used by Auto Loader process data incrementally?",
+        "choices": [
+            "A.Checkpointing",
+            "B.Spark Structured Streaming",
+            "C.Data Explorer",
+            "D.Unity Catalog",
+            "E.Databricks SQL"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 15,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 54 discussion.html",
+        "question": "Which of the following can be used to simplify and unify siloed data architectures that are specialized for specific use cases?",
+        "choices": [
+            "A.None of these",
+            "B.Data lake",
+            "C.Data warehouse",
+            "D.All of these",
+            "E.Data lakehouse"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 14 discussion.html",
+        "question": "A data engineer wants to create a new table containing the names of customers that live in France.They have written the following command:A senior data engineer mentions that it is organization policy to include a table property indicating that the new table includes personally identifiable information (PII).Which of the following lines of code fills in the above blank to successfully complete the task?",
+        "choices": [
+            "A.There is no way to indicate whether a table contains PII.",
+            "B.\"COMMENT PII\"",
+            "C.TBLPROPERTIES PII",
+            "D.COMMENT \"Contains PII\"",
+            "E.PII"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 15,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 103 discussion.html",
+        "question": "A data engineer runs a statement every day to copy the previous day\u2019s sales into the table transactions. Each day\u2019s sales are in their own file in the location \"/transactions/raw\".Today, the data engineer runs the following command to complete this task:After running the command today, the data engineer notices that the number of records in table transactions has not changed.What explains why the statement might not have copied any new records into the table?",
+        "choices": [
+            "A.The format of the files to be copied were not included with the FORMAT_OPTIONS keyword.",
+            "B.The COPY INTO statement requires the table to be refreshed to view the copied rows.",
+            "C.The previous day\u2019s file has already been copied into the table.",
+            "D.The PARQUET file format does not support COPY INTO."
+        ],
+        "correct_answer": "C",
+        "user_data": []
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 102 discussion.html",
+        "question": "What is the first line of a Databricks Python notebook when viewed in a text editor?",
+        "choices": [
+            "A.%python",
+            "B.// Databricks notebook source",
+            "C.# Databricks notebook source",
+            "D.-- Databricks notebook source",
+            "E.# MAGIC %python"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 9,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 75 discussion.html",
+        "question": "A data engineer has joined an existing project and they see the following query in the project repository:CREATE STREAMING LIVE TABLE loyal_customers ASSELECT customer_id -FROM STREAM(LIVE.customers)WHERE loyalty_level = 'high';Which of the following describes why the STREAM function is included in the query?",
+        "choices": [
+            "A.The STREAM function is not needed and will cause an error.",
+            "B.The table being created is a live table.",
+            "C.The customers table is a streaming live table.",
+            "D.The customers table is a reference to a Structured Streaming query on a PySpark DataFrame.",
+            "E.The data in the customers table has been updated since its last run."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 77 discussion.html",
+        "question": "A data engineer and data analyst are working together on a data pipeline. The data engineer is working on the raw, bronze, and silver layers of the pipeline using Python, and the data analyst is working on the gold layer of the pipeline using SQL. The raw source of the pipeline is a streaming input. They now want to migrate their pipeline to use Delta Live Tables.Which of the following changes will need to be made to the pipeline when migrating to Delta Live Tables?",
+        "choices": [
+            "A.None of these changes will need to be made",
+            "B.The pipeline will need to stop using the medallion-based multi-hop architecture",
+            "C.The pipeline will need to be written entirely in SQL",
+            "D.The pipeline will need to use a batch source in place of a streaming source",
+            "E.The pipeline will need to be written entirely in Python"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 9,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 1 discussion.html",
+        "question": "A data organization leader is upset about the data analysis team\u2019s reports being different from the data engineering team\u2019s reports. The leader believes the siloed nature of their organization\u2019s data engineering and data analysis architectures is to blame.Which of the following describes how a data lakehouse could alleviate this issue?",
+        "choices": [
+            "A.Both teams would autoscale their work as data size evolves",
+            "B.Both teams would use the same source of truth for their work",
+            "C.Both teams would reorganize to report to the same department",
+            "D.Both teams would be able to collaborate on projects in real-time",
+            "E.Both teams would respond more quickly to ad-hoc requests"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 18,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 111 discussion.html",
+        "question": "Which describes a method of installing a Python package scoped at the notebook level to all nodes in the currently active cluster?",
+        "choices": [
+            "A.Run source env/bin/activate in a notebook setup script",
+            "B.Use b in a notebook cell",
+            "C.Use %pip install in a notebook cell",
+            "D.Use %sh pip install in a notebook cell",
+            "E.Install libraries from PyPI using the cluster UI"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 117 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 13 discussion.html",
+        "question": "Which of the following commands will return the location of database customer360?",
+        "choices": [
+            "A.DESCRIBE LOCATION customer360;",
+            "B.DROP DATABASE customer360;",
+            "C.DESCRIBE DATABASE customer360;",
+            "D.ALTER DATABASE customer360 SET DBPROPERTIES ('location' = '/user'};",
+            "E.USE DATABASE customer360;"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 16,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 122 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 20 discussion.html",
+        "question": "A data engineer needs to create a table in Databricks using data from their organization\u2019s existing SQLite database.They run the following command:Which of the following lines of code fills in the above blank to successfully complete the task?",
+        "choices": [
+            "A.org.apache.spark.sql.jdbc",
+            "B.autoloader",
+            "C.DELTA",
+            "D.sqlite",
+            "E.org.apache.spark.sql.sqlite"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 10,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 81 discussion.html",
+        "question": "Which of the following statements regarding the relationship between Silver tables and Bronze tables is always true?",
+        "choices": [
+            "A.Silver tables contain a less refined, less clean view of data than Bronze data.",
+            "B.Silver tables contain aggregates while Bronze data is unaggregated.",
+            "C.Silver tables contain more data than Bronze tables.",
+            "D.Silver tables contain a more refined and cleaner view of data than Bronze tables.",
+            "E.Silver tables contain less data than Bronze tables."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 116 discussion.html",
+        "question": "The data engineering team is configuring environments for development, testing, and production before beginning migration on a new data pipeline. The team requires extensive testing on both the code and data resulting from code execution, and the team wants to develop and test against data as similar to production data as possible.A junior data engineer suggests that production data can be mounted to the development and testing environments, allowing pre-production code to execute against production data. Because all users have admin privileges in the development environment, the junior data engineer has offered to configure permissions and mount this data for the team.Which statement captures best practices for this situation?",
+        "choices": [
+            "A.All development, testing, and production code and data should exist in a single, unified workspace; creating separate environments for testing and development complicates administrative overhead.",
+            "B.In environments where interactive code will be executed, production data should only be accessible with read permissions; creating isolated databases for each environment further reduces risks.",
+            "C.As long as code in the development environment declares USE dev_db at the top of each notebook, there is no possibility of inadvertently committing changes back to production data sources.",
+            "D.Because Delta Lake versions all data and supports time travel, it is not possible for user error or malicious actors to permanently delete production data; as such, it is generally safe to mount production data anywhere.",
+            "E.Because access to production data will always be verified using passthrough credentials, it is safe to mount data to any Databricks development environment."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 108 discussion.html",
+        "question": "Which statement describes the default execution mode for Databricks Auto Loader?",
+        "choices": [
+            "A.Cloud vendor-specific queue storage and notification services are configured to track newly arriving files; the target table is materialized by directly querying all valid files in the source directory.",
+            "B.New files are identified by listing the input directory; the target table is materialized by directly querying all valid files in the source directory.",
+            "C.Webhooks trigger a Databricks job to run anytime new data arrives in a source directory; new data are automatically merged into target tables using rules inferred from the data.",
+            "D.New files are identified by listing the input directory; new files are incrementally and idempotently loaded into the target Delta Lake table.",
+            "E.Cloud vendor-specific queue storage and notification services are configured to track newly arriving files; new files are incrementally and idempotently loaded into the target Delta Lake table."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 4,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 19 discussion.html",
+        "question": "A data engineer runs a statement every day to copy the previous day\u2019s sales into the table transactions. Each day\u2019s sales are in their own file in the location \"/transactions/raw\".Today, the data engineer runs the following command to complete this task:After running the command today, the data engineer notices that the number of records in table transactions has not changed.Which of the following describes why the statement might not have copied any new records into the table?",
+        "choices": [
+            "A.The format of the files to be copied were not included with the FORMAT_OPTIONS keyword.",
+            "B.The names of the files to be copied were not included with the FILES keyword.",
+            "C.The previous day\u2019s file has already been copied into the table.",
+            "D.The PARQUET file format does not support COPY INTO.",
+            "E.The COPY INTO statement requires the table to be refreshed to view the copied rows."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 14,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 3,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 107 discussion.html",
+        "question": "A data engineer is attempting to drop a Spark SQL table my_table and runs the following command:DROP TABLE IF EXISTS my_table;After running this command, the engineer notices that the data files and metadata files have been deleted from the file system.What is the reason behind the deletion of all these files?",
+        "choices": [
+            "A.The table was managed",
+            "B.The table's data was smaller than 10 GB",
+            "C.The table did not have a location",
+            "D.The table was external"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 62 discussion.html",
+        "question": "A data engineer needs to apply custom logic to identify employees with more than 5 years of experience in array column employees in table stores. The custom logic should create a new column exp_employees that is an array of all of the employees with more than 5 years of experience for each row. In order to apply this custom logic at scale, the data engineer wants to use the FILTER higher-order function.Which of the following code blocks successfully completes this task?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 47 discussion.html",
+        "question": "Which of the following is a benefit of the Databricks Lakehouse Platform embracing open source technologies?",
+        "choices": [
+            "A.Cloud-specific integrations",
+            "B.Simplified governance",
+            "C.Ability to scale storage",
+            "D.Ability to scale workloads",
+            "E.Avoiding vendor lock-in"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 45 discussion.html",
+        "question": "A new data engineering team has been assigned to work on a project. The team will need access to database customers in order to see what tables already exist. The team has its own group team.Which of the following commands can be used to grant the necessary permission on the entire database to the new team?",
+        "choices": [
+            "A.GRANT VIEW ON CATALOG customers TO team;",
+            "B.GRANT CREATE ON DATABASE customers TO team;",
+            "C.GRANT USAGE ON CATALOG team TO customers;",
+            "D.GRANT CREATE ON DATABASE team TO customers;",
+            "E.GRANT USAGE ON DATABASE customers TO team;"
+        ],
+        "correct_answer": "E -",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 26,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 134 discussion.html",
+        "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame from DataFrame storesDF where column storeId is of the type string. Identify the error.Code block:storesDF.withColumn(\u201cstoreId\u201d, cast(col(\u201cstoreId\u201d), StringType()))",
+        "choices": [
+            "A.Calls to withColumn() cannot create a new column of the same name on which it is operating.",
+            "B.DataFrame columns cannot be converted to a new type inside of a call to withColumn().",
+            "C.The call to StringType should not be followed by parentheses.",
+            "D.The column name storeId inside the col() operation should not be quoted.",
+            "E.The cast() operation is a method in the Column class rather than a standalone function."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 129 discussion.html",
+        "question": "Assuming that the Databricks CLI has been installed and configured correctly, which Databricks CLI command can be used to upload a custom Python Wheel to object storage mounted with the DBFS for use with a production job?",
+        "choices": [
+            "A.configure",
+            "B.fs",
+            "C.workspace",
+            "D.libraries"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 21 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 78 discussion.html",
+        "question": "The data engineering team maintains the following code:Assuming that this code produces logically correct results and the data in the source table has been de-duplicated and validated, which statement describes what will occur when this code is executed?",
+        "choices": [
+            "A.The silver_customer_sales table will be overwritten by aggregated values calculated from all records in the gold_customer_lifetime_sales_summary table as a batch job.",
+            "B.A batch job will update the gold_customer_lifetime_sales_summary table, replacing only those rows that have different values than the current version of the table, using customer_id as the primary key.",
+            "C.The gold_customer_lifetime_sales_summary table will be overwritten by aggregated values calculated from all records in the silver_customer_sales table as a batch job.",
+            "D.An incremental job will leverage running information in the state store to update aggregate values in the gold_customer_lifetime_sales_summary table.",
+            "E.An incremental job will detect if new rows have been written to the silver_customer_sales table; if new rows are detected, all aggregates will be recalculated and used to overwrite the gold_customer_lifetime_sales_summary table."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 95 discussion.html",
+        "question": "A task orchestrator has been configured to run two hourly tasks. First, an outside system writes Parquet data to a directory mounted at /mnt/raw_orders/. After this data is written, a Databricks job containing the following code is executed:Assume that the fields customer_id and order_id serve as a composite key to uniquely identify each order, and that the time field indicates when the record was queued in the source system.If the upstream system is known to occasionally enqueue duplicate entries for a single order hours apart, which statement is correct?",
+        "choices": [
+            "A.Duplicate records enqueued more than 2 hours apart may be retained and the orders table may contain duplicate records with the same customer_id and order_id.",
+            "B.All records will be held in the state store for 2 hours before being deduplicated and committed to the orders table.",
+            "C.The orders table will contain only the most recent 2 hours of records and no duplicates will be present.",
+            "D.Duplicate records arriving more than 2 hours apart will be dropped, but duplicates that arrive in the same batch may both be written to the orders table.",
+            "E.The orders table will not contain duplicates, but records arriving more than 2 hours late will be ignored and missing from the table."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 31 discussion.html",
+        "question": "A data engineer has configured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table.The cade block used by the data engineer is below:If the data engineer only wants the query to execute a micro-batch to process data every 5 seconds, which of the following lines of code should the data engineer use to fill in the blank?",
+        "choices": [
+            "A.trigger(\"5 seconds\")",
+            "B.trigger()",
+            "C.trigger(once=\"5 seconds\")",
+            "D.trigger(processingTime=\"5 seconds\")",
+            "E.trigger(continuous=\"5 seconds\")"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 15,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 55 discussion.html",
+        "question": "A data architect has determined that a table of the following format is necessary:Which of the following code blocks uses SQL DDL commands to create an empty Delta table in the above format regardless of whether a table already exists with this name?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 7 discussion.html",
+        "question": "A data engineer has realized that they made a mistake when making a daily update to a table. They need to use Delta time travel to restore the table to a version that is 3 days old. However, when the data engineer attempts to time travel to the older version, they are unable to restore the data because the data files have been deleted.Which of the following explains why the data files are no longer present?",
+        "choices": [
+            "A.The VACUUM command was run on the table",
+            "B.The TIME TRAVEL command was run on the table",
+            "C.The DELETE HISTORY command was run on the table",
+            "D.The OPTIMIZE command was nun on the table",
+            "E.The HISTORY command was run on the table"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 25,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 73 discussion.html",
+        "question": "A Structured Streaming job deployed to production has been resulting in higher than expected cloud storage costs. At present, during normal execution, each microbatch of data is processed in less than 3s; at least 12 times per minute, a microbatch is processed that contains 0 records. The streaming write was configured using the default trigger settings. The production job is currently scheduled alongside many other Databricks jobs in a workspace with instance pools provisioned to reduce start-up time for jobs with batch execution.Holding all other variables constant and assuming records need to be processed in less than 10 minutes, which adjustment will meet the requirement?",
+        "choices": [
+            "A.Set the trigger interval to 3 seconds; the default trigger interval is consuming too many records per batch, resulting in spill to disk that can increase volume costs.",
+            "B.Increase the number of shuffle partitions to maximize parallelism, since the trigger interval cannot be modified without modifying the checkpoint directory.",
+            "C.Set the trigger interval to 10 minutes; each batch calls APIs in the source storage account, so decreasing trigger frequency to maximum allowable threshold should minimize this cost.",
+            "D.Set the trigger interval to 500 milliseconds; setting a small but non-zero trigger interval ensures that the source is not queried too frequently.",
+            "E.Use the trigger once option and configure a Databricks job to execute the query every 10 minutes; this approach minimizes costs for both compute and storage."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 27 discussion.html",
+        "question": "In order for Structured Streaming to reliably track the exact progress of the processing so that it can handle any kind of failure by restarting and/or reprocessing, which of the following two approaches is used by Spark to record the offset range of the data being processed in each trigger?",
+        "choices": [
+            "A.Checkpointing and Write-ahead Logs",
+            "B.Structured Streaming cannot record the offset range of the data being processed in each trigger.",
+            "C.Replayable Sources and Idempotent Sinks",
+            "D.Write-ahead Logs and Idempotent Sinks",
+            "E.Checkpointing and Idempotent Sinks"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 14,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 33 discussion.html",
+        "question": "Which of the following describes when to use the CREATE STREAMING LIVE TABLE (formerly CREATE INCREMENTAL LIVE TABLE) syntax over the CREATE LIVE TABLE syntax when creating Delta Live Tables (DLT) tables using SQL?",
+        "choices": [
+            "A.CREATE STREAMING LIVE TABLE should be used when the subsequent step in the DLT pipeline is static.",
+            "B.CREATE STREAMING LIVE TABLE should be used when data needs to be processed incrementally.",
+            "C.CREATE STREAMING LIVE TABLE is redundant for DLT and it does not need to be used.",
+            "D.CREATE STREAMING LIVE TABLE should be used when data needs to be processed through complicated aggregations.",
+            "E.CREATE STREAMING LIVE TABLE should be used when the previous step in the DLT pipeline is static."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 20,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 67 discussion.html",
+        "question": "In which of the following scenarios should a data engineer use the MERGE INTO command instead of the INSERT INTO command?",
+        "choices": [
+            "A.When the location of the data needs to be changed",
+            "B.When the target table is an external table",
+            "C.When the source table can be deleted",
+            "D.When the target table cannot contain duplicate records",
+            "E.When the source is not a Delta table"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 110 discussion.html",
+        "question": "A large company seeks to implement a near real-time solution involving hundreds of pipelines with parallel updates of many tables with extremely high volume and high velocity data.Which of the following solutions would you implement to achieve this requirement?",
+        "choices": [
+            "A.Use Databricks High Concurrency clusters, which leverage optimized cloud storage connections to maximize data throughput.",
+            "B.Partition ingestion tables by a small time duration to allow for many data files to be written in parallel.",
+            "C.Configure Databricks to save all data to attached SSD volumes instead of object storage, increasing file I/O significantly.",
+            "D.Isolate Delta Lake tables in their own storage containers to avoid API limits imposed by cloud vendors.",
+            "E.Store all tables in a single database to ensure that the Databricks Catalyst Metastore can load balance overall throughput."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 8,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 128 discussion.html",
+        "question": "A data engineer has a single-task Job that runs each morning before they begin working. After identifying an upstream data issue, they need to set up another task to run a new notebook prior to the original task.Which approach can the data engineer use to set up the new task?",
+        "choices": [
+            "A.They can clone the existing task in the existing Job and update it to run the new notebook.",
+            "B.They can create a new task in the existing Job and then add it as a dependency of the original task.",
+            "C.They can create a new task in the existing Job and then add the original task as a dependency of the new task.",
+            "D.They can create a new job from scratch and add both tasks to run concurrently."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 120 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 101 discussion.html",
+        "question": "Which indicators would you look for in the Spark UI\u2019s Storage tab to signal that a cached table is not performing optimally? Assume you are using Spark\u2019s MEMORY_ONLY storage level.",
+        "choices": [
+            "A.Size on Disk is < Size in Memory",
+            "B.The RDD Block Name includes the \u201c*\u201d annotation signaling a failure to cache",
+            "C.Size on Disk is > 0",
+            "D.The number of Cached Partitions > the number of Spark Partitions",
+            "E.On Heap Memory Usage is within 75% of Off Heap Memory Usage"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 83 discussion.html",
+        "question": "A data engineer has a Job that has a complex run schedule, and they want to transfer that schedule to other Jobs.Rather than manually selecting each value in the scheduling form in Databricks, which of the following tools can the data engineer use to represent and submit the schedule programmatically?",
+        "choices": [
+            "A.pyspark.sql.types.DateType",
+            "B.datetime",
+            "C.pyspark.sql.types.TimestampType",
+            "D.Cron syntax",
+            "E.There is no way to represent and submit this information programmatically"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 39 discussion.html",
+        "question": "A data analysis team has noticed that their Databricks SQL queries are running too slowly when connected to their always-on SQL endpoint. They claim that this issue is present when many members of the team are running small queries simultaneously. They ask the data engineering team for help. The data engineering team notices that each of the team\u2019s queries uses the same SQL endpoint.Which of the following approaches can the data engineering team use to improve the latency of the team\u2019s queries?",
+        "choices": [
+            "A.They can increase the cluster size of the SQL endpoint.",
+            "B.They can increase the maximum bound of the SQL endpoint\u2019s scaling range.",
+            "C.They can turn on the Auto Stop feature for the SQL endpoint.",
+            "D.They can turn on the Serverless feature for the SQL endpoint.",
+            "E.They can turn on the Serverless feature for the SQL endpoint and change the Spot Instance Policy to \u201cReliability Optimized.\u201d"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 26,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 16,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 26 discussion.html",
+        "question": "A Delta Live Table pipeline includes two datasets defined using STREAMING LIVE TABLE. Three datasets are defined against Delta Lake table sources using LIVE TABLE.The table is configured to run in Production mode using the Continuous Pipeline Mode.Assuming previously unprocessed data exists and all definitions are valid, what is the expected outcome after clicking Start to update the pipeline?",
+        "choices": [
+            "A.All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist to allow for additional testing.",
+            "B.All datasets will be updated once and the pipeline will persist without any processing. The compute resources will persist but go unused.",
+            "C.All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will be deployed for the update and terminated when the pipeline is stopped.",
+            "D.All datasets will be updated once and the pipeline will shut down. The compute resources will be terminated.",
+            "E.All datasets will be updated once and the pipeline will shut down. The compute resources will persist to allow for additional testing."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 16,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 9 discussion.html",
+        "question": "Which of the following data lakehouse features results in improved data quality over a traditional data lake?",
+        "choices": [
+            "A.A data lakehouse provides storage solutions for structured and unstructured data.",
+            "B.A data lakehouse supports ACID-compliant transactions.",
+            "C.A data lakehouse allows the use of SQL queries to examine data.",
+            "D.A data lakehouse stores data in open formats.",
+            "E.A data lakehouse enables machine learning and artificial Intelligence workloads."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 37,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 119 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 23 discussion.html",
+        "question": "A data engineer is attempting to drop a Spark SQL table my_table. The data engineer wants to delete all table metadata and data.They run the following command:DROP TABLE IF EXISTS my_table -While the object no longer appears when they run SHOW TABLES, the data files still exist.Which of the following describes why the data files still exist and the metadata files were deleted?",
+        "choices": [
+            "A.The table\u2019s data was larger than 10 GB",
+            "B.The table\u2019s data was smaller than 10 GB",
+            "C.The table was external",
+            "D.The table did not have a location",
+            "E.The table was managed"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 100 discussion.html",
+        "question": "The data engineering team has been tasked with configuring connections to an external database that does not have a supported native connector with Databricks. The external database already has data security configured by group membership. These groups map directly to user groups already created in Databricks that represent various teams within the company.A new login credential has been created for each group in the external database. The Databricks Utilities Secrets module will be used to make these credentials available to Databricks users.Assuming that all the credentials are configured correctly on the external database and group membership is properly configured on Databricks, which statement describes how teams can be granted the minimum necessary access to using these credentials?",
+        "choices": [
+            "A.\"Manage\" permissions should be set on a secret key mapped to those credentials that will be used by a given team.",
+            "B.\"Read\" permissions should be set on a secret key mapped to those credentials that will be used by a given team.",
+            "C.\"Read\" permissions should be set on a secret scope containing only those credentials that will be used by a given team.",
+            "D.\"Manage\" permissions should be set on a secret scope containing only those credentials that will be used by a given team.No additional configuration is necessary as long as all users are configured as administrators in the workspace where secrets have been added."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 96 discussion.html",
+        "question": "A junior data engineer is migrating a workload from a relational database system to the Databricks Lakehouse. The source system uses a star schema, leveraging foreign key constraints and multi-table inserts to validate records on write.Which consideration will impact the decisions made by the engineer while migrating this workload?",
+        "choices": [
+            "A.Databricks only allows foreign key constraints on hashed identifiers, which avoid collisions in highly-parallel writes.",
+            "B.Databricks supports Spark SQL and JDBC; all logic can be directly migrated from the source system without refactoring.",
+            "C.Committing to multiple tables simultaneously requires taking out multiple table locks and can lead to a state of deadlock.",
+            "D.All Delta Lake transactions are ACID compliant against a single table, and Databricks does not enforce foreign key constraints.",
+            "E.Foreign keys must reference a primary key field; multi-table inserts must leverage Delta Lake\u2019s upsert functionality."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 52 discussion.html",
+        "question": "In which of the following file formats is data from Delta Lake tables primarily stored?",
+        "choices": [
+            "A.Delta",
+            "B.CSV",
+            "C.Parquet",
+            "D.JSON",
+            "E.A proprietary, optimized format specific to Databricks"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 114 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 44 discussion.html",
+        "question": "A new data engineering team team. has been assigned to an ELT project. The new data engineering team will need full privileges on the database customers to fully manage the project.Which of the following commands can be used to grant full permissions on the database to the new data engineering team?",
+        "choices": [
+            "A.GRANT USAGE ON DATABASE customers TO team;",
+            "B.GRANT ALL PRIVILEGES ON DATABASE team TO customers;",
+            "C.GRANT SELECT PRIVILEGES ON DATABASE customers TO teams;",
+            "D.GRANT SELECT CREATE MODIFY USAGE PRIVILEGES ON DATABASE customers TO team;",
+            "E.GRANT ALL PRIVILEGES ON DATABASE customers TO team;"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 10,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 105 discussion.html",
+        "question": "The data science team has created and logged a production model using MLflow. The model accepts a list of column names and returns a new column of type DOUBLE.The following code correctly imports the production model, loads the customers table containing the customer_id key column into a DataFrame, and defines the feature columns needed for the model.Which code block will output a DataFrame with the schema \"customer_id LONG, predictions DOUBLE\"?",
+        "choices": [
+            "A.df.map(lambda x:model(x[columns])).select(\"customer_id, predictions\")",
+            "B.df.select(\"customer_id\", model(*columns).alias(\"predictions\"))",
+            "C.model.predict(df, columns)",
+            "D.df.select(\"customer_id\", pandas_udf(model, columns).alias(\"predictions\"))",
+            "E.df.apply(model, columns).select(\"customer_id, predictions\")"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 87 discussion.html",
+        "question": "A data engineer has been using a Databricks SQL dashboard to monitor the cleanliness of the input data to a data analytics dashboard for a retail use case. The job has a Databricks SQL query that returns the number of store-level records where sales is equal to zero. The data engineer wants their entire team to be notified via a messaging webhook whenever this value is greater than 0.Which of the following approaches can the data engineer use to notify their entire team via a messaging webhook whenever the number of stores with $0 in sales is greater than zero?",
+        "choices": [
+            "A.They can set up an Alert with a custom template.",
+            "B.They can set up an Alert with a new email alert destination.",
+            "C.They can set up an Alert with one-time notifications.",
+            "D.They can set up an Alert with a new webhook alert destination.",
+            "E.They can set up an Alert without notifications."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 59 discussion.html",
+        "question": "A data engineer wants to create a relational object by pulling data from two tables. The relational object does not need to be used by other data engineers in other sessions. In order to save on storage costs, the data engineer wants to avoid copying and storing physical data.Which of the following relational objects should the data engineer create?",
+        "choices": [
+            "A.Spark SQL Table",
+            "B.View",
+            "C.Database",
+            "D.Temporary view",
+            "E.Delta Table"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 4,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 63 discussion.html",
+        "question": "A data engineer has a Python variable table_name that they would like to use in a SQL query. They want to construct a Python code block that will run the query using table_name.They have the following incomplete code block:____(f\"SELECT customer_id, spend FROM {table_name}\")Which of the following can be used to fill in the blank to successfully complete the task?",
+        "choices": [
+            "A.spark.delta.sql",
+            "B.spark.delta.table",
+            "C.spark.table",
+            "D.dbutils.sql",
+            "E.spark.sql"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 85 discussion.html",
+        "question": "An engineering manager uses a Databricks SQL query to monitor ingestion latency for each data source. The manager checks the results of the query every day, but they are manually rerunning the query each day and waiting for the results.Which of the following approaches can the manager use to ensure the results of the query are updated each day?",
+        "choices": [
+            "A.They can schedule the query to refresh every 1 day from the SQL endpoint's page in Databricks SQL.",
+            "B.They can schedule the query to refresh every 12 hours from the SQL endpoint's page in Databricks SQL.",
+            "C.They can schedule the query to refresh every 1 day from the query's page in Databricks SQL.",
+            "D.They can schedule the query to run every 1 day from the Jobs UI.",
+            "E.They can schedule the query to run every 12 hours from the Jobs UI."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 91 discussion.html",
+        "question": "A developer has successfully configured their credentials for Databricks Repos and cloned a remote Git repository. They do not have privileges to make changes to the main branch, which is the only branch currently visible in their workspace.Which approach allows this user to share their code updates without the risk of overwriting the work of their teammates?",
+        "choices": [
+            "A.Use Repos to checkout all changes and send the git diff log to the team.",
+            "B.Use Repos to create a fork of the remote repository, commit all changes, and make a pull request on the source repository.",
+            "C.Use Repos to pull changes from the remote Git repository; commit and push changes to a branch that appeared as changes were pulled.",
+            "D.Use Repos to merge all differences and make a pull request back to the remote repository.",
+            "E.Use Repos to create a new branch, commit all changes, and push changes to the remote Git repository."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 6,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 104 discussion.html",
+        "question": "The Databricks CLI is used to trigger a run of an existing job by passing the job_id parameter. The response that the job run request has been submitted successfully includes a field run_id.Which statement describes what the number alongside this field represents?",
+        "choices": [
+            "A.The job_id and number of times the job has been run are concatenated and returned.",
+            "B.The total number of jobs that have been run in the workspace.",
+            "C.The number of times the job definition has been run in this workspace.",
+            "D.The job_id is returned in this field.",
+            "E.The globally unique ID of the newly triggered run."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 3,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 130 discussion.html",
+        "question": "The marketing team at your organization provides regular updates of a segment of your customer dataset. The marketing team has given you a CSV with 1 million records that must be updated in BigQuery. When you use the UPDATE statement in BigQuery, you receive a quotaExceeded error. What should you do?",
+        "choices": [
+            "A.Reduce the number of records updated each day to stay within the BigQuery UPDATE DML statement limit.",
+            "B.Increase the BigQuery UPDATE DML statement limit in the Quota management section of the Google Cloud Platform Console.",
+            "C.Split the source CSV file into smaller CSV files in Cloud Storage to reduce the number of BigQuery UPDATE DML statements per BigQuery job.",
+            "D.Import the new records from the CSV file into a new BigQuery table. Create a BigQuery job that merges the new records with the existing records and writes the results to a new BigQuery table."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 118 discussion.html",
+        "question": "Which of the following describes the difference between DataFrame.repartition(n) and DataFrame.coalesce(n)?",
+        "choices": [
+            "A.DataFrame.repartition(n) will split a DataFrame into n number of new partitions with data distributed evenly.DataFrame.coalesce(n) will more quickly combine the existing partitions of a DataFrame but might result in an uneven distribution of data across the new partitions.",
+            "B.While the results are similar, DataFrame.repartition(n) will be more efficient than DataFrame.coalesce(n) because it can partition a Data Frame by the column.",
+            "C.DataFrame.repartition(n) will split a Data Frame into any number of new partitions while minimizing shuffling.DataFrame.coalesce(n) will split a DataFrame onto any number of new partitions utilizing a full shuffle.",
+            "D.While the results are similar, DataFrame.repartition(n) will be less efficient than DataFrame.coalesce(n) because it can partition a Data Frame by the column.",
+            "E.DataFrame.repartition(n) will combine the existing partitions of a DataFrame but may result in an uneven distribution of data across the new partitions.DataFrame.coalesce(n) will more slowly split a Data Frame into n number of new partitions with data distributed evenly."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 123 discussion.html",
+        "question": "A data engineer has developed a data pipeline to ingest data from a JSON source using Auto Loader, but the engineer has not provided any type inference or schema hints in their pipeline. Upon reviewing the data, the data engineer has noticed that all of the columns in the target table are of the string type despite some of the fields only including float or boolean values.Why has Auto Loader inferred all of the columns to be of the string type?",
+        "choices": [
+            "A.Auto Loader cannot infer the schema of ingested data",
+            "B.JSON data is a text-based format",
+            "C.Auto Loader only works with string data",
+            "D.All of the fields had at least one null value"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 70 discussion.html",
+        "question": "A data engineer has configured a Structured Streaming job to read from a table, manipulate the data, and then perform a streaming write into a new table.The code block used by the data engineer is below:If the data engineer only wants the query to process all of the available data in as many batches as required, which of the following lines of code should the data engineer use to fill in the blank?",
+        "choices": [
+            "A.processingTime(1)",
+            "B.trigger(availableNow=True)",
+            "C.trigger(parallelBatch=True)",
+            "D.trigger(processingTime=\"once\")",
+            "E.trigger(continuous=\"once\")"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 56 discussion.html",
+        "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame that is the result of a position-wise union between DataFrame storesDF and DataFrame acquiredStoresDF. Identify the error.Code block:storesDF.unionByName(acquiredStoresDF)",
+        "choices": [
+            "A.There is no DataFrame.unionByName() operation \u2013 the concat() operation should be used instead with both DataFrames as arguments.",
+            "B.There are no key columns specified \u2013 similar column names should be the second argument.",
+            "C.The DataFrame.unionByName() operation does not union DataFrames based on column position \u2013 it uses column name instead.",
+            "D.The unionByName() operation is a standalone operation rather than a method of DataFrame \u2013 it should have both DataFrames as arguments.",
+            "E.There are no column positions specified \u2013 the desired column positions should be the second argument."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 126 discussion.html",
+        "question": "A dataset has been defined using Delta Live Tables and includes an expectations clause:CONSTRAINT valid_timestamp EXPECT (timestamp > '2020-01-01') ON VIOLATION DROP ROWWhat is the expected behavior when a batch of data containing data that violates these constraints is processed?",
+        "choices": [
+            "A.Records that violate the expectation cause the job to fail.",
+            "B.Records that violate the expectation are added to the target dataset and flagged as invalid in a field added to the target dataset.",
+            "C.Records that violate the expectation are dropped from the target dataset and recorded as invalid in the event log.",
+            "D.Records that violate the expectation are added to the target dataset and recorded as invalid in the event log."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 3,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 34 discussion.html",
+        "question": "A data engineer is designing a data pipeline. The source system generates files in a shared directory that is also used by other processes. As a result, the files should be kept as is and will accumulate in the directory. The data engineer needs to identify which files are new since the previous run in the pipeline, and set up the pipeline to only ingest those new files with each run.Which of the following tools can the data engineer use to solve this problem?",
+        "choices": [
+            "A.Unity Catalog",
+            "B.Delta Lake",
+            "C.Databricks SQL",
+            "D.Data Explorer",
+            "E.Auto Loader"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 12,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 58 discussion.html",
+        "question": "Which of the following describes a benefit of creating an external table from Parquet rather than CSV when using a CREATE TABLE AS SELECT statement?",
+        "choices": [
+            "A.Parquet files can be partitioned",
+            "B.CREATE TABLE AS SELECT statements cannot be used on files",
+            "C.Parquet files have a well-defined schema",
+            "D.Parquet files have the ability to be optimized",
+            "E.Parquet files will become Delta tables"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 14,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 80 discussion.html",
+        "question": "The marketing team is looking to share data in an aggregate table with the sales organization, but the field names used by the teams do not match, and a number of marketing-specific fields have not been approved for the sales org.Which of the following solutions addresses the situation while emphasizing simplicity?",
+        "choices": [
+            "A.Create a view on the marketing table selecting only those fields approved for the sales team; alias the names of any fields that should be standardized to the sales naming conventions.",
+            "B.Create a new table with the required schema and use Delta Lake's DEEP CLONE functionality to sync up changes committed to one table to the corresponding table.",
+            "C.Use a CTAS statement to create a derivative table from the marketing table; configure a production job to propagate changes.",
+            "D.Add a parallel table write to the current production pipeline, updating a new sales table that varies as required from the marketing table.",
+            "E.Instruct the marketing team to download results as a CSV and email them to the sales organization."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 40 discussion.html",
+        "question": "A data engineer wants to schedule their Databricks SQL dashboard to refresh once per day, but they only want the associated SQL endpoint to be running when it is necessary.Which of the following approaches can the data engineer use to minimize the total running time of the SQL endpoint used in the refresh schedule of their dashboard?",
+        "choices": [
+            "A.They can ensure the dashboard\u2019s SQL endpoint matches each of the queries\u2019 SQL endpoints.",
+            "B.They can set up the dashboard\u2019s SQL endpoint to be serverless.",
+            "C.They can turn on the Auto Stop feature for the SQL endpoint.",
+            "D.They can reduce the cluster size of the SQL endpoint.",
+            "E.They can ensure the dashboard\u2019s SQL endpoint is not one of the included query\u2019s SQL endpoint."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 17,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 12 discussion.html",
+        "question": "A data analyst has created a Delta table sales that is used by the entire data analysis team. They want help from the data engineering team to implement a series of tests to ensure the data is clean. However, the data engineering team uses Python for its tests rather than SQL.Which of the following commands could the data engineering team use to access sales in PySpark?",
+        "choices": [
+            "A.SELECT * FROM sales",
+            "B.There is no way to share data between PySpark and SQL.",
+            "C.spark.sql(\"sales\")D. spark.delta.table(\"sales\")",
+            "E.spark.table(\"sales\")"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 19,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 124 discussion.html",
+        "question": "Which statement regarding the relationship between Silver tables and Bronze tables is always true?",
+        "choices": [
+            "A.Silver tables contain a less refined, less clean view of data than Bronze data.",
+            "B.Silver tables contain aggregates while Bronze data is unaggregated.",
+            "C.Silver tables contain more data than Bronze tables.",
+            "D.Silver tables contain less data than Bronze tables."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 4 discussion.html",
+        "question": "Which of the following benefits of using the Databricks Lakehouse Platform is provided by Delta Lake?",
+        "choices": [
+            "A.The ability to manipulate the same data using a variety of languages",
+            "B.The ability to collaborate in real time on a single notebook",
+            "C.The ability to set up alerts for query failures",
+            "D.The ability to support batch and streaming workloads",
+            "E.The ability to distribute complex data operations"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 20,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 61 discussion.html",
+        "question": "Which of the following commands will return the number of null values in the member_id column?",
+        "choices": [
+            "A.SELECT count(member_id) FROM my_table;",
+            "B.SELECT count(member_id) - count_null(member_id) FROM my_table;",
+            "C.SELECT count_if(member_id IS NULL) FROM my_table;",
+            "D.SELECT null(member_id) FROM my_table;",
+            "E.SELECT count_null(member_id) FROM my_table;"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 9,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 98 discussion.html",
+        "question": "A table named user_ltv is being used to create a view that will be used by data analysts on various teams. Users in the workspace are configured into groups, which are used for setting up data access using ACLs.The user_ltv table has the following schema:email STRING, age INT, ltv INTThe following view definition is executed:An analyst who is not a member of the auditing group executes the following query:SELECT * FROM user_ltv_no_minorsWhich statement describes the results returned by this query?",
+        "choices": [
+            "A.All columns will be displayed normally for those records that have an age greater than 17; records not meeting this condition will be omitted.",
+            "B.All age values less than 18 will be returned as null values, all other columns will be returned with the values in user_ltv.",
+            "C.All values for the age column will be returned as null values, all other columns will be returned with the values in user_ltv.",
+            "D.All records from all columns will be displayed with the values in user_ltv.",
+            "E.All columns will be displayed normally for those records that have an age greater than 18; records not meeting this condition will be omitted."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 10,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "E",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 121 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 72 discussion.html",
+        "question": "A Delta Live Table pipeline includes two datasets defined using STREAMING LIVE TABLE. Three datasets are defined against Delta Lake table sources using LIVE TABLE.The table is configured to run in Development mode using the Continuous Pipeline Mode.Assuming previously unprocessed data exists and all definitions are valid, what is the expected outcome after clicking Start to update the pipeline?",
+        "choices": [
+            "A.All datasets will be updated once and the pipeline will shut down. The compute resources will be terminated.",
+            "B.All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist until the pipeline is shut down.",
+            "C.All datasets will be updated once and the pipeline will persist without any processing. The compute resources will persist but go unused.",
+            "D.All datasets will be updated once and the pipeline will shut down. The compute resources will persist to allow for additional testing.",
+            "E.All datasets will be updated at set intervals until the pipeline is shut down. The compute resources will persist to allow for additional testing."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 11,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 41 discussion.html",
+        "question": "A data engineer has been using a Databricks SQL dashboard to monitor the cleanliness of the input data to an ELT job. The ELT job has its Databricks SQL query that returns the number of input records containing unexpected NULL values. The data engineer wants their entire team to be notified via a messaging webhook whenever this value reaches 100.Which of the following approaches can the data engineer use to notify their entire team via a messaging webhook whenever the number of NULL values reaches 100?",
+        "choices": [
+            "A.They can set up an Alert with a custom template.",
+            "B.They can set up an Alert with a new email alert destination.",
+            "C.They can set up an Alert with a new webhook alert destination.",
+            "D.They can set up an Alert with one-time notifications.",
+            "E.They can set up an Alert without notifications."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 14,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 37 discussion.html",
+        "question": "A data engineer has a single-task Job that runs each morning before they begin working. After identifying an upstream data issue, they need to set up another task to run a new notebook prior to the original task.Which of the following approaches can the data engineer use to set up the new task?",
+        "choices": [
+            "A.They can clone the existing task in the existing Job and update it to run the new notebook.",
+            "B.They can create a new task in the existing Job and then add it as a dependency of the original task.",
+            "C.They can create a new task in the existing Job and then add the original task as a dependency of the new task.",
+            "D.They can create a new job from scratch and add both tasks to run concurrently.",
+            "E.They can clone the existing task to a new Job and then edit it to run the new notebook."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 44,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 23,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 74 discussion.html",
+        "question": "Which of the following must be specified when creating a new Delta Live Tables pipeline?",
+        "choices": [
+            "A.A key-value pair configuration",
+            "B.The preferred DBU/hour cost",
+            "C.A path to cloud storage location for the written data",
+            "D.A location of a target database for the written data",
+            "E.At least one notebook library to be executed"
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "E",
+                "vote_count": 12,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 84 discussion.html",
+        "question": "The data architect has decided that once data has been ingested from external sources into theDatabricks Lakehouse, table access controls will be leveraged to manage permissions for all production tables and views.The following logic was executed to grant privileges for interactive queries on a production database to the core engineering group.GRANT USAGE ON DATABASE prod TO eng;GRANT SELECT ON DATABASE prod TO eng;Assuming these are the only privileges that have been granted to the eng group and that these users are not workspace administrators, which statement describes their privileges?",
+        "choices": [
+            "A.Group members have full permissions on the prod database and can also assign permissions to other users or groups.",
+            "B.Group members are able to list all tables in the prod database but are not able to see the results of any queries on those tables.",
+            "C.Group members are able to query and modify all tables and views in the prod database, but cannot create new tables or views.",
+            "D.Group members are able to query all tables and views in the prod database, but cannot create or edit anything in the database.",
+            "E.Group members are able to create, query, and modify all tables and views in the prod database, but cannot define custom functions."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 94 discussion.html",
+        "question": "You are designing an Apache Beam pipeline to enrich data from Cloud Pub/Sub with static reference data from BigQuery. The reference data is small enough to fit in memory on a single worker. The pipeline should write enriched results to BigQuery for analysis. Which job type and transforms should this pipeline use?",
+        "choices": [
+            "A.Batch job, PubSubIO, side-inputs",
+            "B.Streaming job, PubSubIO, JdbcIO, side-outputs",
+            "C.Streaming job, PubSubIO, BigQueryIO, side-inputs",
+            "D.Streaming job, PubSubIO, BigQueryIO, side-outputs"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 17,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 17 discussion.html",
+        "question": "A data engineer needs to apply custom logic to string column city in table stores for a specific use case. In order to apply this custom logic at scale, the data engineer wants to create a SQL user-defined function (UDF).Which of the following code blocks creates this SQL UDF?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D.",
+            "E."
+        ],
+        "correct_answer": "E",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 17,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 43 discussion.html",
+        "question": "A data engineer has a Job with multiple tasks that runs nightly. Each of the tasks runs slowly because the clusters take a long time to start.Which of the following actions can the data engineer perform to improve the start up time for the clusters used for the Job?",
+        "choices": [
+            "A.They can use endpoints available in Databricks SQL",
+            "B.They can use jobs clusters instead of all-purpose clusters",
+            "C.They can configure the clusters to be single-node",
+            "D.They can use clusters that are from a cluster pool",
+            "E.They can configure the clusters to autoscale for larger data sizes"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 21,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Databricks Certified Data Engineer Associate examtopics question 28 discussion.html",
+        "question": "Which of the following describes the relationship between Gold tables and Silver tables?",
+        "choices": [
+            "A.Gold tables are more likely to contain aggregations than Silver tables.",
+            "B.Gold tables are more likely to contain valuable data than Silver tables.",
+            "C.Gold tables are more likely to contain a less refined view of data than Silver tables.",
+            "D.Gold tables are more likely to contain more data than Silver tables.",
+            "E.Gold tables are more likely to contain truthful data than Silver tables."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 17,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    }
+]
