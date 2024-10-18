@@ -45,9 +45,9 @@
         "question": "Which of the following code blocks reads a CSV at the file path filePath into a Data Frame with the specified schema schema?",
         "choices": [
             "A.spark.read().csv(filePath)",
-            "B.spark.read().schema(‚Äúschema‚Äù).csv(filePath)",
+            "B.spark.read().schema(AuschemaAu).csv(filePath)",
             "C.spark.read.schema(schema).csv(filePath)",
-            "D.spark.read.schema(‚Äúschema‚Äù).csv(filePath)",
+            "D.spark.read.schema(AuschemaAu).csv(filePath)",
             "E.spark.read().schema(schema).csv(filePath)"
         ],
         "correct_answer": "C",
@@ -117,10 +117,10 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 42 discussion.html",
-        "question": "The code block shown below contains an error. The code block is intended to create a Python UDF assessPerformanceUDF() using the integer-returning Python function assessPerformance() and apply it to column customerSatisfaction in DataFrame storesDF. Identify the error.Code block:assessPerformanceUDF ‚Äì udf(assessPerformance)storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\")))",
+        "question": "The code block shown below contains an error. The code block is intended to create a Python UDF assessPerformanceUDF() using the integer-returning Python function assessPerformance() and apply it to column customerSatisfaction in DataFrame storesDF. Identify the error.Code block:assessPerformanceUDF Ai udf(assessPerformance)storesDF.withColumn(\"result\", assessPerformanceUDF(col(\"customerSatisfaction\")))",
         "choices": [
             "A.The assessPerformance() operation is not properly registered as a UDF.",
-            "B.The withColumn() operation is not appropriate here ‚Äì UDFs should be applied by iterating over rows instead.",
+            "B.The withColumn() operation is not appropriate here Ai UDFs should be applied by iterating over rows instead.",
             "C.UDFs can only be applied vie SQL and not through the DataFrame API.",
             "D.The return type of the assessPerformanceUDF() is not specified in the udf() operation.",
             "E.The assessPerformance() operation should be used on column customerSatisfaction rather than the assessPerformanceUDF() operation."
@@ -238,7 +238,7 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 134 discussion.html",
-        "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame from DataFrame storesDF where column storeId is of the type string. Identify the error.Code block:storesDF.withColumn(‚ÄústoreId‚Äù, cast(col(‚ÄústoreId‚Äù), StringType()))",
+        "question": "The code block shown below contains an error. The code block is intended to return a new DataFrame from DataFrame storesDF where column storeId is of the type string. Identify the error.Code block:storesDF.withColumn(AustoreIdAu, cast(col(AustoreIdAu), StringType()))",
         "choices": [
             "A.Calls to withColumn() cannot create a new column of the same name on which it is operating.",
             "B.DataFrame columns cannot be converted to a new type inside of a call to withColumn().",
@@ -560,9 +560,9 @@
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 117 discussion.html",
         "question": "The code block shown below should return a DataFrame containing all columns from DataFrame storesDF except for column sqft and column customerSatisfaction. Choose the response that correctly fills in the numbered blanks within the code block to complete this task.Code block:__1__.__2__(__3__)",
         "choices": [
-            "A.1. drop2. storesDF3. col(‚Äúsqft‚Äù), col(‚ÄúcustomerSatisfaction‚Äù)",
+            "A.1. drop2. storesDF3. col(AusqftAu), col(AucustomerSatisfactionAu)",
             "B.1. storesDF2. drop3. sqft, customerSatisfaction",
-            "C.1. storesDF2. drop3. ‚Äúsqft‚Äù, ‚ÄúcustomerSatisfaction‚Äù",
+            "C.1. storesDF2. drop3. AusqftAu, AucustomerSatisfactionAu",
             "D.1. storesDF2. drop3. col(sqft), col(customerSatisfaction)",
             "E.1. drop2. storesDF3. col(sqft), col(customerSatisfaction)"
         ],
@@ -604,13 +604,13 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 45 discussion.html",
-        "question": "The code block shown below contains an error. The code block is intended to cache DataFrame storesDF only in Spark‚Äôs memory and then return the number of rows in the cached DataFrame. Identify the error.Code block:storesDF.cache().count()",
+        "question": "The code block shown below contains an error. The code block is intended to cache DataFrame storesDF only in SparkAos memory and then return the number of rows in the cached DataFrame. Identify the error.Code block:storesDF.cache().count()",
         "choices": [
-            "A.The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default ‚Äì the storage level must be specified to MEMORY_ONLY as an argument to cache().",
-            "B.The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default ‚Äì the storage level must be set via storesDF.storageLevel prior to calling cache().",
-            "C.The storesDF DataFrame has not been checkpointed ‚Äì it must have a checkpoint in order to be cached.",
-            "D.DataFrames themselves cannot be cached ‚Äì DataFrame storesDF must be cached as a table.",
-            "E.The cache() operation can only cache DataFrames at the MEMORY_AND_DISK level (the default) ‚Äì persist() should be used instead."
+            "A.The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default Ai the storage level must be specified to MEMORY_ONLY as an argument to cache().",
+            "B.The cache() operation caches DataFrames at the MEMORY_AND_DISK level by default Ai the storage level must be set via storesDF.storageLevel prior to calling cache().",
+            "C.The storesDF DataFrame has not been checkpointed Ai it must have a checkpoint in order to be cached.",
+            "D.DataFrames themselves cannot be cached Ai DataFrame storesDF must be cached as a table.",
+            "E.The cache() operation can only cache DataFrames at the MEMORY_AND_DISK level (the default) Ai persist() should be used instead."
         ],
         "correct_answer": "B",
         "user_data": [
@@ -750,7 +750,7 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 175 discussion.html",
-        "question": "Which of the following code blocks returns a DataFrame containing a column month, an integer representation of the month from column openDate from DataFrame storesDF?Note that column openDate is of type integer and represents a date in the UNIX epoch format ‚Äî the number of seconds since midnight on January 1 st, 1970.A sample of storesDF is displayed below:",
+        "question": "Which of the following code blocks returns a DataFrame containing a column month, an integer representation of the month from column openDate from DataFrame storesDF?Note that column openDate is of type integer and represents a date in the UNIX epoch format Ai the number of seconds since midnight on January 1 st, 1970.A sample of storesDF is displayed below:",
         "choices": [
             "A.storesDF.withColumn(\"month\", getMonth(col(\"openDate\")))",
             "B.storesDF.withColumn(\"month\", substr(col(\"openDate\"), 4, 2))",
@@ -903,11 +903,11 @@
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 135 discussion.html",
         "question": "Which of the following code blocks returns a new DataFrame where column division is the first two characters of column division in DataFrame storesDF?",
         "choices": [
-            "A.storesDF.withColumn(‚Äúdivision‚Äù, substr(col(‚Äúdivision‚Äù), 0, 2))",
-            "B.storesDF.withColumn(‚Äúdivision‚Äù, susbtr(col(‚Äúdivision‚Äù), 1, 2))",
-            "C.storesDF,withColumn(‚Äúdivision‚Äù, col(‚Äúdivision‚Äù).substr(0, 3))",
-            "D.storesDF.withColumn(‚Äúdivision‚Äù, col(‚Äúdivision‚Äù).substr(0, 2))",
-            "E.storesDF.withColumn(‚Äúdivision‚Äù, col(‚Äúdivision‚Äù).substr(l, 2))"
+            "A.storesDF.withColumn(AudivisionAu, substr(col(AudivisionAu), 0, 2))",
+            "B.storesDF.withColumn(AudivisionAu, susbtr(col(AudivisionAu), 1, 2))",
+            "C.storesDF,withColumn(AudivisionAu, col(AudivisionAu).substr(0, 3))",
+            "D.storesDF.withColumn(AudivisionAu, col(AudivisionAu).substr(0, 2))",
+            "E.storesDF.withColumn(AudivisionAu, col(AudivisionAu).substr(l, 2))"
         ],
         "correct_answer": "E",
         "user_data": [
@@ -934,10 +934,10 @@
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 1 discussion.html",
         "question": "Which of the following describes the Spark driver?",
         "choices": [
-            "A.The Spark driver is responsible for performing all execution in all execution modes ‚Äì it is the entire Spark application.",
-            "B.The Spare driver is fault tolerant ‚Äì if it fails, it will recover the entire Spark application.",
-            "C.The Spark driver is the coarsest level of the Spark execution hierarchy ‚Äì it is synonymous with the Spark application.",
-            "D.The Spark driver is the program space in which the Spark application‚Äôs main method runs coordinating the Spark entire application.",
+            "A.The Spark driver is responsible for performing all execution in all execution modes Ai it is the entire Spark application.",
+            "B.The Spare driver is fault tolerant Ai if it fails, it will recover the entire Spark application.",
+            "C.The Spark driver is the coarsest level of the Spark execution hierarchy Ai it is synonymous with the Spark application.",
+            "D.The Spark driver is the program space in which the Spark applicationAos main method runs coordinating the Spark entire application.",
             "E.The Spark driver is horizontally scaled to increase overall processing throughput of a Spark application."
         ],
         "correct_answer": "D",
@@ -1031,13 +1031,13 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 143 discussion.html",
-        "question": "Which of the following code blocks returns a DataFrame containing a column openDateString, a string representation of Java‚Äôs SimpleDateFormat?Note that column openDate is of type integer and represents a date in the UNIX epoch format ‚Äî the number of seconds since midnight on January 1st, 1970.An example of Java's SimpleDateFormat is \"Sunday, Dec 4, 2008 1:05 pm\".A sample of storesDF is displayed below:",
+        "question": "Which of the following code blocks returns a DataFrame containing a column openDateString, a string representation of JavaAos SimpleDateFormat?Note that column openDate is of type integer and represents a date in the UNIX epoch format Ai the number of seconds since midnight on January 1st, 1970.An example of Java's SimpleDateFormat is \"Sunday, Dec 4, 2008 1:05 pm\".A sample of storesDF is displayed below:",
         "choices": [
-            "A.storesDF.withColumn(\"openDatestring\", from unixtime(col(\"openDate‚Äú), ‚ÄúEEEE, MMM d, yyyy h:mm a\"))",
-            "B.storesDF.withColumn(\"openDateString\", from_unixtime(col(\"openDate‚Äú), \"EEEE, MMM d, yyyy h:mm a\", TimestampType()))",
+            "A.storesDF.withColumn(\"openDatestring\", from unixtime(col(\"openDateAu), AuEEEE, MMM d, yyyy h:mm a\"))",
+            "B.storesDF.withColumn(\"openDateString\", from_unixtime(col(\"openDateAu), \"EEEE, MMM d, yyyy h:mm a\", TimestampType()))",
             "C.storesDF.withColumn(\"openDateString\", date(col(\"openDate\"), \"EEEE, MMM d, yyyy h:mm a\"))",
             "D.storesDF.newColumn(col(\"openDateString\"), from_unixtime(\"openDate\", \"EEEE, MMM d, yyyy h:mm a\"))",
-            "E.storesDF.withColumn(\"openDateString\", date(col(\"openDate‚Äú), \"EEEE, MMM d, yyyy h:mm a\", TimestampType))"
+            "E.storesDF.withColumn(\"openDateString\", date(col(\"openDateAu), \"EEEE, MMM d, yyyy h:mm a\", TimestampType))"
         ],
         "correct_answer": "A",
         "user_data": [
@@ -1138,11 +1138,11 @@
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 113 discussion.html",
         "question": "Which of the following code blocks writes DataFrame storesDF to file path filePath as parquet overwriting any existing files in that location?",
         "choices": [
-            "A.storesDF.write(filePath, mode = ‚Äúoverwrite‚Äù)",
-            "B.storesDF.write().mode(‚Äúoverwrite‚Äù).parquet(filePath)",
-            "C.storesDF.write.mode(‚Äúoverwrite‚Äù).parquet(filePath)",
-            "D.storesDF.write.option(‚Äúparquet‚Äù, ‚Äúoverwrite‚Äù).path(filePath)",
-            "E.storesDF.write.mode(‚Äúoverwrite‚Äù).path(filePath)"
+            "A.storesDF.write(filePath, mode = AuoverwriteAu)",
+            "B.storesDF.write().mode(AuoverwriteAu).parquet(filePath)",
+            "C.storesDF.write.mode(AuoverwriteAu).parquet(filePath)",
+            "D.storesDF.write.option(AuparquetAu, AuoverwriteAu).path(filePath)",
+            "E.storesDF.write.mode(AuoverwriteAu).path(filePath)"
         ],
         "correct_answer": "C",
         "user_data": [
@@ -1257,7 +1257,7 @@
         "question": "Which of the following will occur if there are more slots than there are tasks?",
         "choices": [
             "A.The Spark job will likely not run as efficiently as possible.",
-            "B.The Spark application will fail ‚Äì there must be at least as many tasks as there are slots.",
+            "B.The Spark application will fail Ai there must be at least as many tasks as there are slots.",
             "C.Some executors will shut down and allocate all slots on larger executors first.",
             "D.More tasks will be automatically generated to ensure all slots are being used.",
             "E.The Spark job will use just one single slot to perform all tasks."
@@ -1303,7 +1303,7 @@
         "choices": [
             "A.userLookup.join(streamingDF, [\"userid\"], how=\"inner\")",
             "B.streamingDF.join(userLookup, [\"user_id\"], how=\"outer\")",
-            "C.streamingDF.join(userLookup, [\"user_id‚Äù], how=\"left\")",
+            "C.streamingDF.join(userLookup, [\"user_idAu], how=\"left\")",
             "D.streamingDF.join(userLookup, [\"userid\"], how=\"inner\")",
             "E.userLookup.join(streamingDF, [\"user_id\"], how=\"right\")"
         ],
@@ -1547,7 +1547,7 @@
     },
     {
         "filename": "result_Databricks Certified Associate Developer for Apache Spark examtopics question 100 discussion.html",
-        "question": "The code block shown below contains an error. The code block is intended to return the exact number of distinct values in column division in DataFrame storesDF. Identify the error.Code block:storesDF.agg(approx_count_distinct(col(‚Äúdivision‚Äù)).alias(‚ÄúdivisionDistinct‚Äù))",
+        "question": "The code block shown below contains an error. The code block is intended to return the exact number of distinct values in column division in DataFrame storesDF. Identify the error.Code block:storesDF.agg(approx_count_distinct(col(AudivisionAu)).alias(AudivisionDistinctAu))",
         "choices": [
             "A.The approx_count_distinct() operation needs a second argument to set the rsd parameter to ensure it returns the exact number of distinct values.",
             "B.There is no alias() operation for the approx_count_distinct() operation's output.",
