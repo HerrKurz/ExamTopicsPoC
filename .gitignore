@@ -1,6 +1,5 @@
 # Folders
 html_pages/*
-questions/*
 !*aws_test*
 !*terraform_associate_new*
 

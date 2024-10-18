@@ -3,16 +3,25 @@ import json
 import os
 
 
-def load_exams():
+def load_vendors():
+    return [
+        d
+        for d in os.listdir("./questions")
+        if os.path.isdir(os.path.join("./questions", d))
+    ]
+
+
+def load_exams(vendor):
     exams = []
-    for filename in os.listdir("./questions"):
+    vendor_dir = os.path.join("./questions", vendor)
+    for filename in os.listdir(vendor_dir):
         if filename.endswith(".json"):
             exams.append(filename[:-5])  # Remove .json extension
     return exams
 
 
-def load_questions(exam_name):
-    with open(f"./questions/{exam_name}.json", "r") as file:
+def load_questions(vendor, exam_name):
+    with open(f"./questions/{vendor}/{exam_name}.json", "r") as file:
         data = json.load(file)
 
     questions = []
@@ -39,8 +48,12 @@ def load_questions(exam_name):
 
 
 def initialize_session_state():
+    if "vendors" not in st.session_state:
+        st.session_state.vendors = load_vendors()
+    if "selected_vendor" not in st.session_state:
+        st.session_state.selected_vendor = None
     if "exams" not in st.session_state:
-        st.session_state.exams = load_exams()
+        st.session_state.exams = []
     if "selected_exam" not in st.session_state:
         st.session_state.selected_exam = None
     if "questions" not in st.session_state:
@@ -69,15 +82,28 @@ def run_quiz():
     initialize_session_state()
 
     if not st.session_state.quiz_started:
-        st.write("Select an exam to start the quiz:")
-        selected_exam = st.selectbox("Choose an exam", st.session_state.exams)
+        st.write("Select a vendor and exam to start the quiz:")
 
-        if st.button("Start Quiz"):
-            st.session_state.selected_exam = selected_exam
-            st.session_state.questions = load_questions(selected_exam)
-            st.session_state.total_questions = len(st.session_state.questions)
-            st.session_state.quiz_started = True
-            st.rerun()
+        # Vendor selection
+        selected_vendor = st.selectbox("Choose a vendor", st.session_state.vendors)
+
+        if selected_vendor != st.session_state.selected_vendor:
+            st.session_state.selected_vendor = selected_vendor
+            st.session_state.exams = load_exams(selected_vendor)
+            st.session_state.selected_exam = None
+
+        # Exam selection
+        if st.session_state.selected_vendor:
+            selected_exam = st.selectbox("Choose an exam", st.session_state.exams)
+
+            if st.button("Start Quiz"):
+                st.session_state.selected_exam = selected_exam
+                st.session_state.questions = load_questions(
+                    st.session_state.selected_vendor, selected_exam
+                )
+                st.session_state.total_questions = len(st.session_state.questions)
+                st.session_state.quiz_started = True
+                st.rerun()
 
     if st.session_state.quiz_started:
         st.sidebar.header("Score Tracker")
@@ -140,15 +166,22 @@ def run_quiz():
                 f"Your final score: {st.session_state.score} out of {st.session_state.total_questions}"
             )
 
-            if st.button("Restart Quiz"):
-                st.session_state.current_question = 0
-                st.session_state.score = 0
-                st.session_state.submitted = False
-                st.session_state.user_answers = []
-                st.session_state.attempts = 0
-                st.session_state.answered = False
-                st.session_state.quiz_started = False
-                st.rerun()
+            col1, col2 = st.columns(2)
+            with col1:
+                if st.button("Restart Quiz"):
+                    st.session_state.current_question = 0
+                    st.session_state.score = 0
+                    st.session_state.submitted = False
+                    st.session_state.user_answers = []
+                    st.session_state.attempts = 0
+                    st.session_state.answered = False
+                    st.rerun()
+            with col2:
+                if st.button("Choose Different Vendor/Exam"):
+                    st.session_state.quiz_started = False
+                    st.session_state.selected_vendor = None
+                    st.session_state.selected_exam = None
+                    st.rerun()
 
 
 if __name__ == "__main__":
