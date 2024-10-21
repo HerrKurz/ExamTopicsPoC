@@ -71,14 +71,14 @@ def load_progress():
 
 
 def main():
-    base_query = "AWS Certified Data Engineer - Associate exam topics question"
-    save_directory = "./html_pages/AWS/data_engineer_associate"
-    number_of_questions = 152
+    base_query = "Microsoft DP-203 Examtopics question"
+    save_directory = "./html_pages/Azure/DP_203"
+    number_of_questions = 203
 
     os.makedirs(save_directory, exist_ok=True)
 
     # start_from = load_progress()
-    start_from = 85
+    start_from = 0
     logging.info(f"Resuming from question {start_from + 1}")
 
     for i in range(start_from + 1, number_of_questions + 1):

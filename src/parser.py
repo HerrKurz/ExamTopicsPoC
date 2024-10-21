@@ -5,7 +5,9 @@ import chardet
 import html
 import unicodedata
 
-html_dir = "./html_pages/Databricks/spark_developer_associate"
+
+PATH_EXAM = "Azure/DP_900"
+html_dir = f"./html_pages/{PATH_EXAM}"
 extracted_data = []
 
 
@@ -79,7 +81,7 @@ for filename in os.listdir(html_dir):
 
         extracted_data.append(data)
 
-output_file = "./questions/Databricks/spark_developer_associate_new.json"
+output_file = f"./questions/{PATH_EXAM}.json"
 with open(output_file, "w", encoding="utf-8") as json_file:
     json.dump(extracted_data, json_file, indent=4, ensure_ascii=True)
 

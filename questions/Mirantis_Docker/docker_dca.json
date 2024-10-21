@@ -1,0 +1,1390 @@
+[
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 95 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 82 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 4 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 91 discussion.html",
+        "question": "Which networking drivers allow you to enable multi-host network connectivity between containers?",
+        "choices": [
+            "A.bridge, user-defined, host",
+            "B.host, macvlan, overlay, user-defined",
+            "C.bridge, macvlan, ipvlan, overlay",
+            "D.macvlan, ipvlan, and overlay"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 113 discussion.html",
+        "question": "A new banking application is being developed as the main currency exchange resource for all the customers on a global scale. The application must comply with the security based on the deployed region. Therefore, the CI/CD pipeline must be created with the highest security possible.Which approach accomplishes this goal?",
+        "choices": [
+            "A.Give the accounts used in the CI/CD pipeline full administrative rights to all applications",
+            "B.Use the same passwords across the entire CI/CD pipeline",
+            "C.Ensure that secrets are not inadvertently passed on during builds for pull requests via CI/CD pipeline",
+            "D.Never use one-time passwords in CI/CD pipeline"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 116 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 68 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 58 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 43 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 65 discussion.html",
+        "question": "Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? user",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 77 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 55 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 14 discussion.html",
+        "question": "Seven managers are in a swarm cluster.Is this how should they be distributed across three datacenters or availability zones?5-1-1",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 39 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 112 discussion.html",
+        "question": "Which Dockerfile produces an efficient image rebuild when the exposed port Python dependency, or MyApp source code is modified?",
+        "choices": [
+            "A.",
+            "B.",
+            "C.",
+            "D."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 4,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 52 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 49 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 111 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 125 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 1 discussion.html",
+        "question": "What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)",
+        "choices": [
+            "A.ADD supports regular expression handling while COPY does not.",
+            "B.COPY supports compression format handling while ADD does not.",
+            "C.ADD supports compression format handling while COPY does not.",
+            "D.COPY supports regular expression handling while ADD does not.",
+            "E.ADD supports remote URL handling while COPY does not."
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 64 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 26 discussion.html",
+        "question": "Will this command ensure that overlay traffic between service tasks is encrypted? docker network create -d overlay --secure <network-name>",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 42 discussion.html",
+        "question": "You configure a local Docker engine to enforce content trust by setting the environment variable DOCKER_CONTENT_TRUST=1.If myorg/myimage:1.0 is unsigned, does Docker block this command? docker image build, from a Dockerfile that begins FROM myorg/myimage:1.0",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 124 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 120 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 130 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 57 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 106 discussion.html",
+        "question": "In a modern data center environment, which mechanism secures internal assets while allowing Internet-based access to selected resources?",
+        "choices": [
+            "A.Virtual local area network",
+            "B.Demilitarized zone",
+            "C.Virtual private network",
+            "D.WWN zoning"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 9 discussion.html",
+        "question": "Is this an advantage of multi-stage builds?better caching when building Docker images",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 92 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 121 discussion.html",
+        "question": "Which command is used to display status information for various components?",
+        "choices": [
+            "A.show sysenrv all",
+            "B.show all systems",
+            "C.show system messages",
+            "D.sysmess all"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 119 discussion.html",
+        "question": "Which three characteristics are true of Control Plane VMs? (Choose three.)",
+        "choices": [
+            "A.They can be resized by administrators directly through vCenter Inventory View.",
+            "B.They each run the Spherelet.",
+            "C.They each expose the Kubernetes API.",
+            "D.They do not run any Kubernetes Pods.",
+            "E.They are connected to a Management portgroup.",
+            "F.They are deployed via a vCenter Service."
+        ],
+        "correct_answer": "ABE",
+        "user_data": [
+            {
+                "voted_answers": "CEF",
+                "vote_count": 2,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "CDF",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 93 discussion.html",
+        "question": "An administrator manages VM templates and ISO images for a remote office. Their main re-quirements are to store these templates in a single repository and manage different versions of the templates.What solution should the administrator deploy to meet these requirements?",
+        "choices": [
+            "A.A vSAN datatore",
+            "B.A shared VMFS datastore",
+            "C.A local content library",
+            "D.A subscribed content library"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 4,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 28 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 89 discussion.html",
+        "question": "HOTSPOT -You have an Azure container registry named contoso2023 as shown in the following exhibit.You need to enable contoso2023 to use a dedicated data endpoint.Which two settings should you configure for contoso2023? To answer, select the appropriate settings in the answer area.NOTE: Each correct answer is worth one point.",
+        "choices": [],
+        "correct_answer": "",
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 47 discussion.html",
+        "question": "Can this set of commands identify the published port(s) for a container?Aodocker port inspectAo, Aodocker container inspectAo",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 17 discussion.html",
+        "question": "Is this the purpose of Docker Content Trust?Enable mutual TLS between the Docker client and server.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 104 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 5 discussion.html",
+        "question": "Is this a way to configure the Docker engine to use a registry without a trusted TLS certificate?Set INSECURE_REGISTRY in the Ao/etc/docker/defaultAo configuration file.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 99 discussion.html",
+        "question": "You are deploying a PHP App Engine Standard service with Cloud SQL as the backend. You want to minimize the number of queries to the database.What should you do?",
+        "choices": [
+            "A.Set the memcache service level to dedicated. Create a key from the hash of the query, and return database values from memcache before issuing a query to Cloud SQL.",
+            "B.Set the memcache service level to dedicated. Create a cron task that runs every minute to populate the cache with keys containing query results.",
+            "C.Set the memcache service level to shared. Create a cron task that runs every minute to save all expected queries to a key called iC cached_queriesiC .",
+            "D.Set the memcache service level to shared. Create a key called iC cached_queriesiC , and return database values from the key before using a query to Cloud SQL."
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 134 discussion.html",
+        "question": "Given the complexities of an organizationAos network infrastructure, a threat actor has exploited an unidentified vulnerability, leading to a major data breach. As a Certified Ethical Hacker (CEH). you are tasked with enhancing the organization's security stance. To ensure a comprehensive security defense, you recommend a certain security strategy. Which of the following best represents the strategy you would likely suggest and why?",
+        "choices": [
+            "A.Develop an in-depth Risk Management process, involving identification, assessment, treatment, tracking, and review of risks to control the potential effects on the organization.",
+            "B.Establish a Defense-in-Depth strategy, incorporating multiple layers of security measures to increase the complexity and decrease the likelihood of a successful attack.",
+            "C.Implement an Information Assurance (IA) policy focusing on ensuring the integrity, availability, confidentiality, and authenticity of information systems.",
+            "D.Adopt a Continual/Adaptive Security Strategy involving ongoing prediction, prevention, detection, and response actions to ensure comprehensive computer network defense."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 11,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 97 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 40 discussion.html",
+        "question": "Will a DTR security scan detect this?private keys copied to the image",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 50 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 30 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 122 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 8 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 87 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 38 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 2 discussion.html",
+        "question": "What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)",
+        "choices": [
+            "A.ADD supports regular expression handling while COPY does not.",
+            "B.COPY supports compression format handling while ADD does not.",
+            "C.ADD supports compression format handling while COPY does not.",
+            "D.COPY supports regular expression handling while ADD does not.",
+            "E.ADD supports remote URL handling while COPY does not."
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 41 discussion.html",
+        "question": "What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)",
+        "choices": [
+            "A.ADD supports regular expression handling while COPY does not.",
+            "B.COPY supports compression format handling while ADD does not.",
+            "C.ADD supports compression format handling while COPY does not.",
+            "D.COPY supports regular expression handling while ADD does not.",
+            "E.ADD supports remote URL handling while COPY does not."
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 56 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 66 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 84 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 71 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 59 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 48 discussion.html",
+        "question": "Is this a Linux kernel namespace that is disabled by default and must be enabled at Docker engine runtime to be used? user",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 109 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 129 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 6 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 32 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 63 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 21 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 22 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 131 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 69 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 105 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 12 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 33 discussion.html",
+        "question": "Does this command create a swarm service that only listens on port 53 using the UDP protocol?Aodocker service create --name dns-cache -p 53:53 --udp dns-cacheAo",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 24 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 7 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 117 discussion.html",
+        "question": "You have a Microsoft 365 subscription that uses Microsoft Intune Suite.You use Microsoft Intune to manage devices.You have the devices shown in the following table.Which devices can be changed to Windows 11 Enterprise by using subscription activation?",
+        "choices": [
+            "A.Device3 only",
+            "B.Device2 and Device3 only",
+            "C.Device1 and Device2 only",
+            "D.Device1, Device2, and Device3"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 18,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 54 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 85 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 101 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 31 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 102 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 34 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 70 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 90 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 88 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 110 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 10 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 18 discussion.html",
+        "question": "Is this the purpose of Docker Content Trust?Sign and verify image tags.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 98 discussion.html",
+        "question": "A customer is preparing to deploy a VMware Kubernetes solution in an NSX environment.What is the minimum MTU size for the UPLINK profile?",
+        "choices": [
+            "A.1700",
+            "B.1550",
+            "C.1650",
+            "D.1500"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": false
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 135 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 108 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 15 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 126 discussion.html",
+        "question": "Your team will start developing a new application using microservices architecture on Kubernetes Engine. As part of the development lifecycle, any code change that has been pushed to the remote develop branch on your GitHub repository should be built and tested automatically. When the build and test are successful, the relevant microservice will be deployed automatically in the development environment. You want to ensure that all code deployed in the development environment follows this process. What should you do?",
+        "choices": [
+            "A.Have each developer install a pre-commit hook on their workstation that tests the code and builds the container when committing on the development branch. After a successful commit, have the developer deploy the newly built container image on the development cluster.",
+            "B.Install a post-commit hook on the remote git repository that tests the code and builds the container when code is pushed to the development branch. After a successful commit, have the developer deploy the newly built container image on the development cluster.",
+            "C.Create a Cloud Build trigger based on the development branch that tests the code, builds the container, and stores it in Container Registry. Create a deployment pipeline that watches for new images and deploys the new image on the development cluster. Ensure only the deployment tool has access to deploy new versions.",
+            "D.Create a Cloud Build trigger based on the development branch to build a new container image and store it in Container Registry. Rely on Vulnerability Scanning to ensure the code tests succeed. As the final step of the Cloud Build process, deploy the new container image on the development cluster. Ensure only Cloud Build has access to deploy new versions."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 32,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 53 discussion.html",
+        "question": "Does this command create a swarm service that only listens on port 53 using the UDP protocol?Aodocker service create --name dns-cache -p 53:53 --udp dns-cacheAo",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 51 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 23 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 96 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 45 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 29 discussion.html",
+        "question": "Will this sequence of steps completely delete an image from disk in the Docker Trusted Registry?Delete the image and run garbage collection on the Docker Trusted Registry.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 72 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 123 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 75 discussion.html",
+        "question": "Does this command create a swarm service that only listens on port 53 using the UDP protocol?Aodocker service create --name dns-cache -p 53:53 --udp dns-cacheAo",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 80 discussion.html",
+        "question": "During development of an application meant to be orchestrated by Kubernetes, you want to mount the /data directory on your laptop into a container.Will this strategy successfully accomplish this?Add a volume to the pod that sets hostPath.path: /data, and then mount this volume into the podAos containers as desired.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 107 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 132 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 83 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 46 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 74 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 62 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 11 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 86 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 27 discussion.html",
+        "question": "An application image runs in multiple environments, with each environment using different certificates and ports. Is this a way to provision configuration to containers at runtime?Create a Dockerfile for each environment, specifying ports and Docker secrets for certificates.",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 37 discussion.html",
+        "question": "A userAos attempts to set the system time from inside a Docker container are unsuccessful.Could this be blocking this operation?SELinux",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 60 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 128 discussion.html",
+        "question": "As a part of an ethical hacking exercise, an attacker is probing a target network that is suspected to employ various honeypot systems for security. The attacker needs to detect and bypass these honeypots without alerting the target. The attacker decides to utilize a suite of techniques. Which of the following techniques would NOT assist in detecting a honeypot?",
+        "choices": [
+            "A.Implementing a brute force attack to verify system vulnerability",
+            "B.Probing system services and observing the three-way handshake",
+            "C.Using honeypot detection tools like Send-Safe Honeypot Hunter",
+            "D.Analyzing the MAC address to detect instances running on VMware"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 5,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 44 discussion.html",
+        "question": "Can this set of commands identify the published port(s) for a container?Aodocker port inspectAo, Aodocker container inspectAo",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 73 discussion.html",
+        "question": "Which server-side API debug log method is available for scoped applications?",
+        "choices": [
+            "A.gs.log()",
+            "B.gs.info()",
+            "C.gs.debuglog()",
+            "D.gs.print()"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 20 discussion.html",
+        "question": "In the context of a swarm mode cluster, does this describe a node? an instance of the Docker CLI connected to the swarm",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "B",
+        "user_data": []
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 100 discussion.html",
+        "question": "What is the difference between the ADD and COPY Dockerfile instructions? (Choose two.)",
+        "choices": [
+            "A.ADD supports regular expression handling while COPY does not.",
+            "B.COPY supports compression format handling while ADD does not.",
+            "C.ADD supports compression format handling while COPY does not.",
+            "D.COPY supports regular expression handling while ADD does not.",
+            "E.ADD supports remote URL handling while COPY does not."
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 13 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 61 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 76 discussion.html",
+        "question": "A combination of which two components of the software-defined data center (SDDC) are re-sponsible for the initial abstraction of CPU, memory, disk, and network resources and their sub-sequent management? (Choose two.)",
+        "choices": [
+            "A.VMware Aria Operations",
+            "B.VMware Aria Suite Lifecycle",
+            "C.VMware vCenter",
+            "D.VMware ESXi",
+            "E.VMware vCenter Cloud Gateway"
+        ],
+        "correct_answer": "CD",
+        "user_data": [
+            {
+                "voted_answers": "CD",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 16 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 67 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 19 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 78 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 114 discussion.html",
+        "question": "An IT team plans to deploy a new service built on top of an existing service. The capacity needed for the new service is difficult to estimate because the demand for the new service is undetermined. The team has these deployment requirements:A\tA subset of the users of the original service must be migrated to the new service based on their profileA\tThe new service must be rolled back easily if capacity exceeds estimatesWhich deployment strategy must be used?",
+        "choices": [
+            "A.rolling",
+            "B.blue/green",
+            "C.geolocation",
+            "D.canary"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 127 discussion.html",
+        "question": "In an advanced persistent threat scenario, an adversary follows a detailed set of procedures in the cyber kill chain. During one such instance, the adversary has successfully gained access to a corporate network and now attempts to obfuscate malicious traffic within legitimate network traffic. Which of the following actions would most likely be part of the adversary's current procedures?",
+        "choices": [
+            "A.Employing data staging techniques to collect and aggregate sensitive data.",
+            "B.Initiating DNS tunneling to communicate with the command-and-control server.",
+            "C.Establishing a command-and-control server to communicate with compromised systems.",
+            "D.Conducting internal reconnaissance using PowerShell scripts."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 115 discussion.html",
+        "question": "You are creating and running containers across different projects in Google Cloud. The application you are developing needs to access Google Cloud services from within Google Kubernetes Engine (GKE). What should you do?",
+        "choices": [
+            "A.Assign a Google service account to the GKE nodes.",
+            "B.Use a Google service account to run the Pod with Workload Identity.",
+            "C.Store the Google service account credentials as a Kubernetes Secret.",
+            "D.Use a Google service account with GKE role-based access control (RBAC)."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 94 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 81 discussion.html",
+        "question": "You are running only Kubernetes workloads on a worker node that requires maintenance, such as installing patches or an OS upgrade.Which command must be run on the node to gracefully terminate all pods on the node, while marking the node as unschedulable?",
+        "choices": [
+            "A.Aokubectl cordon <node name>Ao",
+            "B.Aodocker swarm leaveAo",
+            "C.Aokubectl drain <node name>Ao",
+            "D.Aodocker node update --availability drain <node name>Ao"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 79 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 133 discussion.html",
+        "question": "You have deployed several instances on Compute Engine. As a security requirement, instances cannot have a public IP address. There is no VPN connection between Google Cloud and your office, and you need to connect via SSH into a specific machine without violating the security requirements. What should you do?",
+        "choices": [
+            "A.Configure Cloud NAT on the subnet where the instance is hosted. Create an SSH connection to the Cloud NAT IP address to reach the instance.",
+            "B.Add all instances to an unmanaged instance group. Configure TCP Proxy Load Balancing with the instance group as a backend. Connect to the instance using the TCP Proxy IP.",
+            "C.Configure Identity-Aware Proxy (IAP) for the instance and ensure that you have the role of IAP-secured Tunnel User. Use the gcloud command line tool to ssh into the instance.",
+            "D.Create a bastion host in the network to SSH into the bastion host from your office location. From the bastion host, SSH into the desired instance."
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 32,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "D",
+                "vote_count": 12,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 25 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 3 discussion.html",
+        "question": "A userAos attempts to set the system time from inside a Docker container are unsuccessful.Could this be blocking this operation?SELinux",
+        "choices": [
+            "A.Yes",
+            "B.No"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 35 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 118 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    },
+    {
+        "filename": "result_Mirantis Docker DCA Examtopics question 103 discussion.html",
+        "question": null,
+        "choices": [],
+        "correct_answer": null,
+        "user_data": null
+    }
+]
