@@ -71,9 +71,9 @@ def load_progress():
 
 
 def main():
-    base_query = "Microsoft DP-203 Examtopics question"
-    save_directory = "./html_pages/Azure/DP_203"
-    number_of_questions = 203
+    base_query = "Scrum PSM I Examtopics question"
+    save_directory = "./html_pages/Scrum/PSM_I"
+    number_of_questions = 258
 
     os.makedirs(save_directory, exist_ok=True)
 

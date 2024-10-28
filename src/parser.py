@@ -6,7 +6,7 @@ import html
 import unicodedata
 
 
-PATH_EXAM = "Azure/DP_900"
+PATH_EXAM = "Scrum/PSM_I"
 html_dir = f"./html_pages/{PATH_EXAM}"
 extracted_data = []
 
