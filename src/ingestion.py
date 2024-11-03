@@ -71,14 +71,14 @@ def load_progress():
 
 
 def main():
-    base_query = "Scrum PSM I Examtopics question"
-    save_directory = "./html_pages/Scrum/PSM_I"
-    number_of_questions = 258
+    base_query = "Databricks Certified Data Engineer Associate Examtopics question"
+    save_directory = "./html_pages/Databricks/data_engineer_associate"
+    number_of_questions = 148
 
     os.makedirs(save_directory, exist_ok=True)
 
     # start_from = load_progress()
-    start_from = 0
+    start_from = 135
     logging.info(f"Resuming from question {start_from + 1}")
 
     for i in range(start_from + 1, number_of_questions + 1):

@@ -6,7 +6,7 @@ import html
 import unicodedata
 
 
-PATH_EXAM = "Scrum/PSM_I"
+PATH_EXAM = "Databricks/data_engineer_associate"
 html_dir = f"./html_pages/{PATH_EXAM}"
 extracted_data = []
 
@@ -81,7 +81,7 @@ for filename in os.listdir(html_dir):
 
         extracted_data.append(data)
 
-output_file = f"./questions/{PATH_EXAM}.json"
+output_file = f"./questions/{PATH_EXAM}_test.json"
 with open(output_file, "w", encoding="utf-8") as json_file:
     json.dump(extracted_data, json_file, indent=4, ensure_ascii=True)
 
