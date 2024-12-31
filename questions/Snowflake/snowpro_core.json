@@ -950,7 +950,7 @@
             "A.The user who created the object",
             "B.The SYSADMIN role",
             "C.Ownership depends on the type of object",
-            "D.The role used to create the objectMost Voted"
+            "D.The role used to create the object"
         ],
         "correct_answer": "D",
         "user_data": [
