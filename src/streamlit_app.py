@@ -239,15 +239,29 @@ def run_quiz():
 
         if st.button("Review Answers"):
             for i, question in enumerate(st.session_state.questions):
-                st.write(f"Question {i + 1}: {question['question']}")
-                user_answer = st.session_state.user_answers.get(i, [])
-                st.write(f"Your answer: {', '.join(user_answer)}")
-                st.write(f"Correct answer: {', '.join(question['correct_answers'])}")
-                if i in st.session_state.correct_answers:
-                    st.success("Correct")
+                st.write(f"\nQuestion {i + 1}: {question['question']}")
+                
+                user_answer_letters = st.session_state.user_answers.get(i, [])
+                user_answer_texts = [question['choices'][ord(letter) - ord('A')] 
+                                   for letter in user_answer_letters]
+                st.write("Your answer(s):")
+                if user_answer_texts:
+                    for ans in user_answer_texts:
+                        st.write(f"- {ans}")
                 else:
-                    st.error("Incorrect")
-                st.write("---")
+                    st.write("- No answer provided")
+
+                correct_answer_texts = [question['choices'][ord(letter) - ord('A')] 
+                                      for letter in question['correct_answers']]
+                st.write("Correct answer(s):")
+                for ans in correct_answer_texts:
+                    st.write(f"- {ans}")
+
+                if i in st.session_state.correct_answers:
+                    st.success("✓ Correct")
+                else:
+                    st.error("✗ Incorrect")
+                st.markdown("---")
 
         if st.button("Start New Quiz"):
             for key in list(st.session_state.keys()):

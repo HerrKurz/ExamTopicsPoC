@@ -1913,7 +1913,13 @@
             "D.Table"
         ],
         "correct_answer": "A",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 1145 discussion.html",
@@ -2993,7 +2999,13 @@
             "D.SELECT"
         ],
         "correct_answer": "B",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 10,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 290 discussion.html",
@@ -4100,15 +4112,21 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 1118 discussion.html",
-        "question": "What is the PRIMARY factor that determines the cost of using a virtual warehouse in Snowflake?",
+        "question": "What is the benefit of using the STRIP_OUTER_ARRAY parameter with the COPY INTO [table] command when loading data from a JSON file into a table?",
         "choices": [
-            "A.The type of SQL statements executed",
-            "B.The number of tables or databases queried",
-            "C.The amount of data stored in the warehouse",
-            "D.The length of time the compute resources in each cluster run"
+            "A.It flattens multiple arrays into a single array.",
+            "B.It removes the outer array structure and loads separate rows of data.",
+            "C.It transforms a pivoted table into an array.",
+            "D.It tokenizes each data string using the defined delimiters."
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 17,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 38 discussion.html",
@@ -4484,7 +4502,13 @@
             "D.Manipulating objects and arrays in a VARIANT column"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 472 discussion.html",
@@ -5276,7 +5300,13 @@
             "D.OBJECT_CONSTRUCT"
         ],
         "correct_answer": "D",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 59 discussion.html",
@@ -5530,15 +5560,21 @@
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 1121 discussion.html",
-        "question": "What are type predicates used for?",
+        "question": "When an object is created in Snowflake, who owns the object?",
         "choices": [
-            "A.Extracting data from a VARIANT column",
-            "B.Casting a value in a VARIANT column to a particular data type",
-            "C.Determining if a value in a VARIANT column is a particular data type",
-            "D.Manipulating objects and arrays in a VARIANT column"
+            "A.The public role",
+            "B.The user's default role",
+            "C.The current active primary role",
+            "D.The owner of the parent schema"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 408 discussion.html",
@@ -5633,15 +5669,19 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 102 discussion.html",
-        "question": "A company has a Snowflake environment running in AWS us-west-2 (Oregon). The company needs to share data privately with a customer who is running their Snowflake environment in Azure East US 2 (Virginia).What is the recommended sequence of operations that must be followed to meet this requirement?",
+        "question": "True or False: Snowflake bills for a minimum of five minutes each time a Virtual Warehouse is started.",
         "choices": [
-            "A.1. Create a share and add the database privileges to the share2. Create a new listing on the Snowflake Marketplace3. Alter the listing and add the share4. Instruct the customer to subscribe to the listing on the Snowflake Marketplace",
-            "B.1. Ask the customer to create a new Snowflake account in Azure EAST US 2 (Virginia)2. Create a share and add the database privileges to the share3. Alter the share and add the customer's Snowflake account to the share",
-            "C.1. Create a new Snowflake account in Azure East US 2 (Virginia)2. Set up replication between AWS us-west-2 (Oregon) and Azure East US 2 (Virginia) for the database objects to be shared3. Create a share and add the database privileges to the share4. Alter the share and add the customer's Snowflake account to the share",
-            "D.1. Create a reader account in Azure East US 2 (Virginia)2. Create a share and add the database privileges to the share3. Add the reader account to the share4. Share the reader account's URL and credentials with the customer"
+            "A.True",
+            "B.False"
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 245 discussion.html",
@@ -6023,7 +6063,13 @@
             "D.TRUNCATE"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 326 discussion.html",
@@ -8753,7 +8799,13 @@
             "D.Time Travel"
         ],
         "correct_answer": "B",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 977 discussion.html",
@@ -9017,8 +9069,14 @@
             "C.Snowflake will charge for 60 seconds at the rate of 32 credits per hour.",
             "D.Snowflake will charge for 60 seconds at the rate of 64 credits per hour."
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 32 discussion.html",
@@ -9194,7 +9252,13 @@
             "D.Spilling"
         ],
         "correct_answer": "D",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 965 discussion.html",
@@ -10002,7 +10066,13 @@
             "D.VARBINARY"
         ],
         "correct_answer": "B",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 915 discussion.html",
@@ -10331,8 +10401,14 @@
             "C.Snowflake will charge for 60 seconds at the rate of 32 credits per hour.",
             "D.Snowflake will charge for 60 seconds at the rate of 64 credits per hour."
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 13,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 1158 discussion.html",
@@ -10505,7 +10581,13 @@
             "D.Pie chart"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 4,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 259 discussion.html",
@@ -12717,15 +12799,21 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 47 discussion.html",
-        "question": "The property MINS_TO_BYPASS_NETWORK_POLICY is set at which level?",
+        "question": "What is the recommended Snowflake data type to store semi-structured data like JSON?",
         "choices": [
-            "A.User",
-            "B.Role",
-            "C.Account",
-            "D.Organization"
+            "A.VARCHAR",
+            "B.RAW",
+            "C.LOB",
+            "D.VARIANT"
         ],
-        "correct_answer": "B",
-        "user_data": []
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 291 discussion page.html",
@@ -12876,15 +12964,19 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 18 discussion.html",
-        "question": "What is the PRIMARY factor that determines the cost of using a virtual warehouse in Snowflake?",
+        "question": "True or False: Reader Accounts incur no additional Compute costs to the Data Provider since they are simply reading the shared data without making changes.",
         "choices": [
-            "A.The type of SQL statements executed",
-            "B.The number of tables or databases queried",
-            "C.The amount of data stored in the warehouse",
-            "D.The length of time the compute resources in each cluster run"
+            "A.True",
+            "B.False"
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 905 discussion.html",
@@ -13156,7 +13248,13 @@
             "D.SnowSQL"
         ],
         "correct_answer": "D",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 236 discussion.html",
@@ -13653,13 +13751,19 @@
         "filename": "result_Snowflake SnowPro Core Examtopics question 927 discussion.html",
         "question": "Which sequence (order) of object privileges should be used to grant a custom role read-only access on a table?",
         "choices": [
-            "A.",
-            "B.",
-            "C.",
-            "D."
+            "A.1. Schema - Usage, 2. Database - Usage, 3. Table - Usage",
+            "B.1. Schema - Usage, 2. Database - Usage, 3. Table - Select",
+            "C.1. Database - Usage, 2. Schema - Usage, 3. Table - Select",
+            "D.1. Database - Usage, 2. Schema - Usage, 3. Table - Operate"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 453 discussion.html",
@@ -15162,7 +15266,13 @@
             "D.SHOW FILE FORMATS"
         ],
         "correct_answer": "D",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 26 discussion page.html",
@@ -15852,7 +15962,13 @@
             "D.MODIFY"
         ],
         "correct_answer": "A",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 13,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 480 discussion.html",
@@ -17342,15 +17458,21 @@
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 1123 discussion.html",
-        "question": "What are type predicates used for?",
+        "question": "Which role is responsible for managing the billing and credit data within Snowflake?",
         "choices": [
-            "A.Extracting data from a VARIANT column",
-            "B.Casting a value in a VARIANT column to a particular data type",
-            "C.Determining if a value in a VARIANT column is a particular data type",
-            "D.Manipulating objects and arrays in a VARIANT column"
+            "A.ORGADMIN",
+            "B.ACCOUNTADMIN",
+            "C.SYSADMIN",
+            "D.SECURITYADMIN"
         ],
-        "correct_answer": "C",
-        "user_data": []
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 720 discussion.html",
@@ -17434,7 +17556,13 @@
             "D.Sort"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 978 discussion.html",
@@ -19447,15 +19575,21 @@
     },
     {
         "filename": "result_Exam SnowPro Core topic 1 question 97 discussion.html",
-        "question": "A company needs to have the following features available in its Snowflake account:1. Support for Multi-Factor Authentication (MFA)2. A minimum of 2 months of Time Travel availability3. Database replication in between different regions4. Native support for JDBC and ODBC5. Customer-managed encryption keys using Tri-Secret Secure6. Support for Payment Card Industry Data Security Standards (PCI DSS)In order to provide all the listed services, what is the MINIMUM Snowflake edition that should be selected during account creation?",
+        "question": "What is the lowest Snowflake edition that offers Time Travel up to 90 days?",
         "choices": [
             "A.Standard",
-            "B.Enterprise",
-            "C.Business Critical",
-            "D.Virtual Private Snowflake (VPS)"
+            "B.Premier",
+            "C.Enterprise",
+            "D.Business Critical Edition"
         ],
         "correct_answer": "C",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 11,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 267 discussion.html",
@@ -19750,15 +19884,21 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 1047 discussion.html",
-        "question": "The property MINS_TO_BYPASS_NETWORK_POLICY is set at which level?",
+        "question": "A Snowflake account has activated federated authentication. What will occur when a user with a password that was defined by Snowflake attempts to log in to Snowflake?",
         "choices": [
-            "A.User",
-            "B.Role",
-            "C.Account",
-            "D.Organization"
+            "A.The user will be unable to enter a password.",
+            "B.The user will encounter an error, and will not be able to log in.",
+            "C.The user will be able to log into Snowflake successfully.",
+            "D.After entering the username and password, the user will be redirected to an Identity Provider (IdP) login page."
         ],
-        "correct_answer": "B",
-        "user_data": []
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 4,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 286 discussion.html",
@@ -21528,7 +21668,13 @@
             "D.ORGADMIN"
         ],
         "correct_answer": "B",
-        "user_data": []
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 752 discussion page.html",
