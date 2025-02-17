@@ -886,7 +886,7 @@
     },
     {
         "filename": "result_Snowflake SnowPro Core Examtopics question 475 discussion.html",
-        "question": "Why do SnowflakeAos virtual warehouses have scaling policies?",
+        "question": "Why do Snowflake's virtual warehouses have scaling policies?",
         "choices": [
             "A.To help save extra storage costs",
             "B.To help increase the performance of serverless computing features",
