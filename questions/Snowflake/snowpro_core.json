@@ -15487,7 +15487,7 @@
             "D.MONETIZED_USAGE_DAILY",
             "E.LISTING_TELEMETRY_DAILY"
         ],
-        "correct_answer": "D",
+        "correct_answer": "DE",
         "user_data": [
             {
                 "voted_answers": "D",
