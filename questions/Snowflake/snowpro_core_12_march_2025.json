@@ -1,0 +1,603 @@
+[
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 393 discussion page.html",
+        "question": "Which query profile statistics help determine if efficient pruning is occurring? (Choose two.)",
+        "choices": [
+            "A.Bytes sent over network",
+            "B.Percentage scanned from cache",
+            "C.Partitions total",
+            "D.Bytes spilled to local storage",
+            "E.Partitions scanned"
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 12,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Exam SnowPro Core topic 1 question 1125 discussion.html",
+        "question": "Which command is used to remove files from either external cloud storage or an internal stage?",
+        "choices": [
+            "A.DELETE",
+            "B.REMOVE",
+            "C.TRUNCATE",
+            "D.DROP"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 1054 discussion.html",
+        "question": "What is the purpose of the STRIP_NULL_VALUES file format option when loading semi-structured data files into Snowflake?",
+        "choices": [
+            "A.It removes null values from all columns in the data.",
+            "B.It converts null values to empty strings during loading.",
+            "C.It skips rows with null values during the loading process.",
+            "D.It removes object or array elements containing null values."
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 1079 discussion page.html",
+        "question": "Which command allows for continuous loading of data files as soon as they are available in a stage?",
+        "choices": [
+            "A.COPY INTO [table]",
+            "B.PUT",
+            "C.CREATE PIPE",
+            "D.GET"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 573 discussion.html",
+        "question": "What happens when the values for both an ALLOWED_IP_LIST and a BLOCKED_IP_LIST are used in a network policy?",
+        "choices": [
+            "A.Snowflake ignores the BLOCKED_IP_LIST first.",
+            "B.Snowflake applies the BLOCKED_IP_LIST first.",
+            "C.Snowflake applies the ALLOWED_IP_LIST first.",
+            "D.Snowflake ignores the ALLOWED_IP_LIST first."
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 866 discussion.html",
+        "question": "Which DDL/DML operation is allowed on an inbound data share?",
+        "choices": [
+            "A.ALTER TABLE",
+            "B.INSERT INTO",
+            "C.MERGE",
+            "D.SELECT"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 7,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 943 discussion.html",
+        "question": "Which Snowflake object uses credits for maintenance?",
+        "choices": [
+            "A.Regular table",
+            "B.Regular view",
+            "C.Materialized view",
+            "D.Cached query result"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 138 discussion page.html",
+        "question": "What is the minimum Snowflake edition that has column-level security enabled?",
+        "choices": [
+            "A.Standard",
+            "B.Enterprise",
+            "C.Business Critical",
+            "D.Virtual Private Snowflake"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 4,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 632 discussion page.html",
+        "question": "What is used to diagnose and troubleshoot network connections to Snowflake?",
+        "choices": [
+            "A.SnowCD",
+            "B.Snowpark",
+            "C.Snowsight",
+            "D.SnowSQL"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 557 discussion.html",
+        "question": "Which functions can be used to share unstructured data through a secure view? (Choose two.)",
+        "choices": [
+            "A.BUILD_SCOPED_FILE_URL",
+            "B.BUILD_STAGE_FILE_URL",
+            "C.GET_ABSOLUTE_PATH",
+            "D.GET_PRESIGNED_URL",
+            "E.GET_RELATIVE_PATH"
+        ],
+        "correct_answer": "AD",
+        "user_data": [
+            {
+                "voted_answers": "AD",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 214 discussion.html",
+        "question": "What is the minimum Snowflake edition required to use Dynamic Data Masking?",
+        "choices": [
+            "A.Standard",
+            "B.Enterprise",
+            "C.Business Critical",
+            "D.Virtual Private Snowflake (VPC)"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 25,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 818 discussion.html",
+        "question": "Based on Snowflake recommendations, when creating a hierarchy of custom roles, the top-most custom role should be assigned to which role?",
+        "choices": [
+            "A.ACCOUNTADMIN",
+            "B.SECURITYADMIN",
+            "C.SYSADMIN",
+            "D.USERADMIN"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 5,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 401 discussion.html",
+        "question": "Network policies can be applied to which of the following Snowflake objects? (Choose two.)",
+        "choices": [
+            "A.Roles",
+            "B.Databases",
+            "C.Warehouses",
+            "D.Users",
+            "E.Accounts"
+        ],
+        "correct_answer": "DE",
+        "user_data": [
+            {
+                "voted_answers": "DE",
+                "vote_count": 12,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 1100 discussion.html",
+        "question": "Which task is supported by the use of Access History in Snowflake?",
+        "choices": [
+            "A.Data backups",
+            "B.Cost monitoring",
+            "C.Compliance auditing",
+            "D.Performance optimization"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Exam SnowPro Core topic 1 question 1145 discussion.html",
+        "question": "When sharing data in Snowflake, what privileges does a Provider need to grant along with a share? (Choose two.)",
+        "choices": [
+            "A.USAGE on the specific tables in the database.",
+            "B.MODIFY on the specific tables in the database.",
+            "C.SELECT on the specific tables in the database.",
+            "D.USAGE on the database and the schema containing the tables to share.",
+            "E.OPERATE on the database and the schema containing the tables to share."
+        ],
+        "correct_answer": "CD",
+        "user_data": [
+            {
+                "voted_answers": "CD",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 791 discussion.html",
+        "question": "Given the statement template below, which database objects can be added to a share? (Choose two.)GRANT [privilege] ON [object] [object_name] TO SHARE [share_name];",
+        "choices": [
+            "A.Secure functions",
+            "B.Stored procedures",
+            "C.Streams",
+            "D.Tables",
+            "E.Tasks"
+        ],
+        "correct_answer": "AD",
+        "user_data": [
+            {
+                "voted_answers": "AD",
+                "vote_count": 8,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "BD",
+                "vote_count": 1,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 699 discussion.html",
+        "question": "Which function generates a Snowflake hosted file URL to a staged file using the stage name and relative file path as inputs?",
+        "choices": [
+            "A.BUILD_STAGE_FILE_URL",
+            "B.BUILD_SCOPED_FILE_URL",
+            "C.GET_PRESIGNED_URL",
+            "D.GET_STAGE_LOCATION"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 8,
+                "is_most_voted": true
+            },
+            {
+                "voted_answers": "B",
+                "vote_count": 2,
+                "is_most_voted": false
+            }
+        ]
+    },
+    {
+        "filename": "result_Exam SnowPro Core topic 1 question 1141 discussion.html",
+        "question": "Which Snowflake function and command combination should be used to convert rows in a relational table to a single VARIANT column, and unload the rows into a file in JSON format? (Choose two.)",
+        "choices": [
+            "A.PUT",
+            "B.GET",
+            "C.COPY",
+            "D.EXPORT",
+            "E.OBJECT_CONSTRUCT"
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Exam SnowPro Core topic 1 question 468 discussion.html",
+        "question": "How can a Snowflake user share data with another user who does not have a Snowflake account?",
+        "choices": [
+            "A.Share the data by implementing User-Defined Functions (UDFs)",
+            "B.Create a reader account and create a share of the data",
+            "C.Grant the READER privilege to the database that is going to be shared",
+            "D.Move the Snowflake account to a region where data sharing is enabled"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 642 discussion page.html",
+        "question": "Which Snowflake object can be created to be temporary?",
+        "choices": [
+            "A.Role",
+            "B.Stage",
+            "C.User",
+            "D.Storage integration"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 4,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 1006 discussion page.html",
+        "question": "Which function can be used with the COPY INTOstatement to convert rows from a relational table to a single VARIANT column, and to unload rows into a JSON file?",
+        "choices": [
+            "A.FLATTEN",
+            "B.OBJECT_AS",
+            "C.OBJECT_CONSTRUCT",
+            "D.TO_VARIANT"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 487 discussion.html",
+        "question": "What Snowflake objects can be added to a share? (Choose two.)",
+        "choices": [
+            "A.Views",
+            "B.Tables",
+            "C.Stored procedures",
+            "D.Streams",
+            "E.Secure views"
+        ],
+        "correct_answer": "BE",
+        "user_data": [
+            {
+                "voted_answers": "BE",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 558 discussion.html",
+        "question": "Which function will return a row for each for each object in a VARIANT, OBJECT, or ARRAY column?",
+        "choices": [
+            "A.CAST",
+            "B.FLATTEN",
+            "C.GET",
+            "D.PARSE_JSON"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 3,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 500 discussion.html",
+        "question": "Which file function provides a URL with access to a file on a stage without the need for authentication and authorization?",
+        "choices": [
+            "A.GET_RELATIVE_PATH",
+            "B.GET_PRESIGNED_URL",
+            "C.BUILD_STAGE_FILE_URL",
+            "D.BUILD_SCOPED_FILE_URL"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 6,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 887 discussion page.html",
+        "question": "From what stage can a Snowflake user omit the FROM clause while loading data into a table?",
+        "choices": [
+            "A.The user stage",
+            "B.The table stage",
+            "C.The internal named stage",
+            "D.The external named stage"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 687 discussion page.html",
+        "question": "Why should a Snowflake user implement a secure view? (Choose two.)",
+        "choices": [
+            "A.To store unstructured data",
+            "B.To increase query performance",
+            "C.To limit access to sensitive data",
+            "D.To optimize query concurrency and queuing",
+            "E.To hide view definition and details from unauthorized users"
+        ],
+        "correct_answer": "CE",
+        "user_data": [
+            {
+                "voted_answers": "CE",
+                "vote_count": 7,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 738 discussion.html",
+        "question": "Which Snowflake view is used to support compliance auditing?",
+        "choices": [
+            "A.ACCESS_HISTORY",
+            "B.COPY_HISTORY",
+            "C.QUERY_HISTORY",
+            "D.ROW_ACCESS_POLICIES"
+        ],
+        "correct_answer": "A",
+        "user_data": [
+            {
+                "voted_answers": "A",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 994 discussion.html",
+        "question": "Which command can be used to list all network policies available in an account?",
+        "choices": [
+            "A.DESCRIBE SESSION POLICY",
+            "B.DESCRIBE NETWORK POLICY",
+            "C.SHOW SESSION POLICIES",
+            "D.SHOW NETWORK POLICIES"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Exam SnowPro Core topic 1 question 932 discussion.html",
+        "question": "Which command is used to unload data from a Snowflake database table into one or more files in a Snowflake stage?",
+        "choices": [
+            "A.CREATE STAGE",
+            "B.COPY INTO [table]",
+            "C.COPY INTO [location]",
+            "D.CREATE PIPE"
+        ],
+        "correct_answer": "C",
+        "user_data": [
+            {
+                "voted_answers": "C",
+                "vote_count": 1,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 373 discussion.html",
+        "question": "Which Snowflake objects can be shared with other Snowflake accounts? (Choose three.)",
+        "choices": [
+            "A.Schemas",
+            "B.Roles",
+            "C.Secure Views",
+            "D.Stored Procedures",
+            "E.Tables",
+            "F.Secure User-Defined Functions (UDFs)"
+        ],
+        "correct_answer": "CEF",
+        "user_data": [
+            {
+                "voted_answers": "CEF",
+                "vote_count": 8,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 639 discussion page.html",
+        "question": "Which file format will keep floating-point numbers from being truncated when data is unloaded?",
+        "choices": [
+            "A.CSV",
+            "B.JSON",
+            "C.ORC",
+            "D.Parquet"
+        ],
+        "correct_answer": "D",
+        "user_data": [
+            {
+                "voted_answers": "D",
+                "vote_count": 2,
+                "is_most_voted": true
+            }
+        ]
+    },
+    {
+        "filename": "result_Snowflake SnowPro Core Examtopics question 518 discussion.html",
+        "question": "Floating point values are truncated when unloaded to which file format?",
+        "choices": [
+            "A.ORC",
+            "B.CSV",
+            "C.Avro",
+            "D.Parquet"
+        ],
+        "correct_answer": "B",
+        "user_data": [
+            {
+                "voted_answers": "B",
+                "vote_count": 10,
+                "is_most_voted": true
+            }
+        ]
+    }
+]
